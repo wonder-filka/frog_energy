@@ -1,0 +1,261 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+// Get a free hosted Postgres database in seconds: `npx create-db`
+
+generator client {
+  provider = "prisma-client"
+  output   = "../app/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+model User {
+  id                 String              @id @default(uuid())
+  email              String              @unique
+  firstName          String
+  passwordHash       String
+  createdAt          DateTime            @default(now())
+  updatedAt          DateTime            @updatedAt
+  energy             Int                 @default(1)
+  passwordResetCodes PasswordResetCode[]
+  moneySlots         MoneySlots[]
+  loveSlots          LoveSlots[]
+  luckSlots          LuckSlots[]
+  soulSlots          SoulSlots[] 
+  dreamSlots         DreamSlots[] 
+  slotHold           SlotHold[]
+  orders             Order[]
+  moneyLikes         MoneyLike[]
+  loveLikes          LoveLike[]
+  luckLikes          LuckLike[]
+  soulLikes          SoulLike[]
+  dreamLikes         DreamLike[]
+}
+
+model MoneySlots {
+  id            String    @id @default(uuid())
+  userId        String
+  personalNum   Int
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+  userText      String?
+  user          User      @relation(fields: [userId], references: [id])
+  expiresAt     DateTime
+  deletedReason String?
+  likes         MoneyLike[]
+
+  @@index([personalNum])
+  @@index([expiresAt])
+  @@index([deletedAt])
+}
+
+model LoveSlots {
+  id            String    @id @default(uuid())
+  userId        String
+  personalNum   Int
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+  userText      String?
+  user          User      @relation(fields: [userId], references: [id])
+  expiresAt     DateTime
+  deletedReason String?
+  likes         LoveLike[]
+
+  @@index([personalNum])
+  @@index([expiresAt])
+  @@index([deletedAt])
+}
+
+model LuckSlots {
+  id            String    @id @default(uuid())
+  userId        String
+  personalNum   Int
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+  userText      String?
+  expiresAt     DateTime
+  deletedReason String?
+  likes         LuckLike[]
+
+  user User @relation(fields: [userId], references: [id])
+
+  @@index([personalNum])
+  @@index([expiresAt])
+  @@index([deletedAt])
+}
+
+model SoulSlots {
+  id            String    @id @default(uuid())
+  userId        String
+  personalNum   Int
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+  userText      String?
+  expiresAt     DateTime
+  deletedReason String?
+  user          User      @relation(fields: [userId], references: [id])
+  likes         SoulLike[]
+
+  @@index([personalNum])
+  @@index([expiresAt])
+  @@index([deletedAt])
+}
+model DreamSlots {
+  id            String    @id @default(uuid())
+  userId        String
+  personalNum   Int
+  createdAt     DateTime  @default(now())
+  updatedAt     DateTime  @updatedAt
+  deletedAt     DateTime?
+  userText      String?
+  expiresAt     DateTime
+  deletedReason String?
+  user          User      @relation(fields: [userId], references: [id])
+  likes         DreamLike[]
+
+  @@index([personalNum])
+  @@index([expiresAt])
+  @@index([deletedAt])
+}
+
+model PasswordResetCode {
+  id        String    @id @default(uuid())
+  userId    String
+  codeHash  String
+  createdAt DateTime  @default(now())
+  expiresAt DateTime
+  usedAt    DateTime?
+  attempts  Int       @default(0)
+  user      User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  @@index([userId])
+}
+
+enum SlotKind {
+  MONEY
+  LOVE
+  LUCK
+  SOUL
+  DREAM
+}
+
+enum HoldStatus {
+  active
+  consumed
+  canceled
+  expired
+}
+
+model SlotHold {
+  id        String     @id @default(uuid())
+  userId    String
+  orderId   String?
+  variant   SlotKind
+  num       Int
+  status    HoldStatus @default(active)
+  createdAt DateTime   @default(now())
+  expiresAt DateTime
+  userText  String?
+  days      Int
+  user      User       @relation(fields: [userId], references: [id])
+  order     Order?     @relation(fields: [orderId], references: [id])
+
+  @@index([expiresAt])
+  @@index([userId, variant, status])
+  @@index([orderId]) // Индекс по ID заказа
+}
+
+model Order {
+  id        String     @id @default(uuid())
+  userId    String
+  amount    Float
+  currency  String     @default("USD")
+  status    String     @default("PENDING") // PENDING, PAID, FAILED, EXPIRED
+  paymentId String?    @unique // ID счета (invoiceId) от Monobank
+  createdAt DateTime   @default(now())
+  updatedAt DateTime   @updatedAt
+  slotHold  SlotHold[]
+
+  user User @relation(fields: [userId], references: [id])
+}
+
+model MoneyLike {
+  id        String     @id @default(uuid())
+  userId    String
+  slotId    String
+  createdAt DateTime   @default(now())
+
+  user  User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  slot  MoneySlots  @relation(fields: [slotId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, slotId])         // один лайк на одну запись от пользователя
+  @@index([slotId])                  // быстрый подсчёт по записи
+}
+
+model LoveLike {
+  id        String     @id @default(uuid())
+  userId    String
+  slotId    String
+  createdAt DateTime   @default(now())
+
+  user  User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  slot  LoveSlots  @relation(fields: [slotId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, slotId])
+  @@index([slotId])
+}
+
+model LuckLike {
+  id        String     @id @default(uuid())
+  userId    String
+  slotId    String
+  createdAt DateTime   @default(now())
+
+  user  User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  slot  LuckSlots  @relation(fields: [slotId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, slotId])
+  @@index([slotId])
+}
+
+model SoulLike {
+  id        String     @id @default(uuid())
+  userId    String
+  slotId    String
+  createdAt DateTime   @default(now())
+
+  user  User       @relation(fields: [userId], references: [id], onDelete: Cascade)
+  slot  SoulSlots  @relation(fields: [slotId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, slotId])
+  @@index([slotId])
+}
+
+model DreamLike {
+  id        String     @id @default(uuid())
+  userId    String
+  slotId    String
+  createdAt DateTime   @default(now())
+
+  user  User        @relation(fields: [userId], references: [id], onDelete: Cascade)
+  slot  DreamSlots  @relation(fields: [slotId], references: [id], onDelete: Cascade)
+
+  @@unique([userId, slotId])
+  @@index([slotId])
+}
+
+model Info {
+  id        String     @id @default(uuid())
+  createdAt DateTime   @default(now())
+  nextBroadcast String
+  prevBroadcast String
+  weekTopic String
+}
+
