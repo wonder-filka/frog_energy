@@ -50,8 +50,8 @@ export function proxy(request: NextRequest) {
  
 export const config = {
   matcher: [
-    // Skip all internal paths (_next)
-    '/((?!_next).*)',
+    // Skip internal paths (_next) and static files from /public (anything with an extension)
+    '/((?!_next|.*\\..*).*)',
     // Optional: only run on root (/) URL
     // '/'
   ],
