@@ -1,0 +1,12 @@
+{
+  "meta": {
+    "siteName": "Frog"
+  },
+  "nav": {
+    "home": "Accueil",
+    "about": "À propos"
+  },
+  "cta": {
+    "welcome": "Bienvenue"
+  }
+}
