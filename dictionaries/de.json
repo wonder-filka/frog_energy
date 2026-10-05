@@ -8,5 +8,612 @@
   },
   "cta": {
     "welcome": "Willkommen"
-  }
+  },
+  "contact": {
+    "getInTouch": "Kontaktieren Sie uns",
+    "description": "Haben Sie Fragen, eine Kooperationsidee oder Feedback? Schreiben Sie uns per E-Mail oder Telegram."
+  },
+  "homePage": "Startseite",
+  "comingSoon": "Demnächst...",
+  "nextBroadcast": "Nächste Sendung:",
+  "prevBroadcast": "Vorherige Sendung:",
+  "weekTopic": "Thema und Wochen-Challenge (findet ihr im Telegram-Kanal und in der Gruppe):",
+  "showMore": "Mehr anzeigen",
+  "shown": "Angezeigt",
+  "of": "von",
+  "home": {
+    "header": {
+      "welcome": "Willkommen",
+      "welcomeAnon": "Willkommen!",
+      "energy": "Deine Energie"
+    },
+    "popular": {
+      "title": "Beliebte Zellen",
+      "empty": "Noch keine beliebten Zellen."
+    },
+    "hero": {
+      "title": "Der Energie-Frosch: Symbol für Glück, Fülle und Wohlstand",
+      "desc": "Schicke eine Nachricht oder eine Askese (Tapasya) an den Frosch — sie wird helfen und die Energie lenken.",
+      "start": "Den Weg beginnen",
+      "read": "Mehr über den Frosch"
+    },
+    "symbolism": {
+      "title": "Symbolik des Frosches"
+    },
+    "features": {
+      "money": {
+        "title": "Wohlstand",
+        "description": "In der chinesischen und slawischen Tradition gilt der Frosch als Symbol für Langlebigkeit, Reichtum und Fruchtbarkeit."
+      },
+      "love": {
+        "title": "Liebe",
+        "description": "Im antiken Griechenland stand der Frosch für Harmonie in Beziehungen und wurde mit Aphrodite, der Göttin der Liebe und Fruchtbarkeit, assoziiert."
+      },
+      "luck": {
+        "title": "Glück",
+        "description": "Bei Azteken und Maya war der Frosch mit Regen und guter Ernte verbunden."
+      },
+      "soul": {
+        "title": "Spiritualität",
+        "description": "Im Alten Ägypten verkörperte der Frosch die Beschützerin von Leben und Wiedergeburt."
+      },
+      "dream": {
+        "title": "Wünsche",
+        "description": "In der antiken Alchemie symbolisierte der Frosch geheimes Wissen und die Erfüllung von Wünschen."
+      }
+    },
+    "desc": {
+      "1": "Jeden Tag führen wir ein Ritual mit einer hölzernen Frosch-Guiro aus.",
+      "2": "Das Quaken wird zum Überträger der auf der Website veröffentlichten Worte und Wünsche.",
+      "3": "Kaufen Sie eine Zelle.",
+      "4": "Hinterlassen Sie Ihren Text.",
+      "5": "Er wird Teil der magischen Handlung.",
+      "6": "Verfolgen Sie die Livestreams, um zu sehen, wie Ihre Botschaft lebendig wird!",
+      "7": "Verwandeln Sie Ihre Worte in Magie. Seien Sie Teil des Rituals.",
+      "title": "Wie es funktioniert"
+    }
+  },
+  "info": {
+    "announcements": {
+      "title": "Streams und Ankündigungen",
+      "empty": "Noch keine Ankündigungen."
+    },
+    "energy": {
+      "title": "Was ist Energie?",
+      "body": "Energie ist die interne Währung der Plattform. Du verdienst sie, indem du Aufgaben erfüllst, an Aktivitäten teilnimmst und zur Community beiträgst. Je aktiver du bist, desto mehr Energie kannst du für Belohnungen und Produkte einsetzen.",
+      "cta": "Zu Aufgaben und dem Empfehlungsprogramm"
+    },
+    "shop": {
+      "title": "Online-Shop",
+      "body": "Im Shop kannst du Waren und Boni gegen Energie eintauschen. Erhöhe dein Guthaben, indem du aktiv auf der Plattform bist.",
+      "cta": "Shop öffnen"
+    },
+    "community": {
+      "title": "Der Community beitreten",
+      "telegram": "Telegram-Community",
+      "discord": "Discord-Server"
+    },
+    "settings": {
+      "title": "Kontoeinstellungen",
+      "profile": "Profil",
+      "openLink": "Einstellungsseite öffnen"
+    },
+    "howto": {
+      "title": "Erste Schritte",
+      "body": "Erstelle dein Profil, wähle interessante Aufgaben und tritt der Community bei. Verfolge deinen Fortschritt und tausche Energie gegen Belohnungen ein."
+    },
+    "ref": {
+      "title": "Empfehlungsprogramm",
+      "body": "Lade Freunde ein und verdiene zusätzliche Energie durch ihre Aktivität.",
+      "cta": "Zur Empfehlungsseite"
+    }
+  },
+  "buyAgain": "Erneut kaufen",
+  "like": "Gefällt mir",
+  "unlike": "Gefällt mir nicht mehr",
+  "auth": {
+    "likeNeedsLogin": "Melden Sie sich an oder registrieren Sie sich, um Beiträge zu liken.",
+    "continueToBuy": "Fahren Sie fort, um den Kauf abzuschließen",
+    "choose": "Anmelden oder Registrieren",
+    "required": "Bitte melden Sie sich an."
+  },
+  "buyForm": {
+    "noUserId": "Bitte melden Sie sich an oder registrieren Sie sich, um den Kauf fortzusetzen.",
+    "pickRandomNumber": "Zufallsnummer wählen",
+    "daysChoose": "Wählen Sie die Anzahl der Tage für die Anzeige Ihrer Botschaft auf dieser Tafel",
+    "daysSumm": "Tage",
+    "pickNumber": "Bevorzugte Nummer wählen",
+    "unknownError": "Unbekannter Fehler. Bitte versuchen Sie es erneut.",
+    "noSelected": "Im Formular wurden keine Zellen ausgewählt.",
+    "preferredNumber": "Bevorzugte Nummer",
+    "numberTaken": "Diese Nummer ist belegt. Bitte wählen Sie eine andere.",
+    "money": "Geld",
+    "love": "Liebe",
+    "quantityMoney": "Anzahl (Geld)",
+    "quantityLove": "Anzahl (Liebe)",
+    "quantityHint": "Sie können bis zu 10 Zellen auf einmal kaufen.",
+    "quantityLuck": "Anzahl (Glück)",
+    "quantitySoul": "Anzahl (Seele)",
+    "quantityDream": "Anzahl (Träume)",
+    "textN": "Text",
+    "textPlaceholder": "Wunsch / Intention",
+    "limit": "Maximale Länge: 160",
+    "sum": "Summe",
+    "submit": {
+      "label": "Zellen kaufen",
+      "first": "Zellen auswählen",
+      "second": "Zellen reservieren"
+    },
+    "back": "Zurück",
+    "pricingHintShort": "Jede Zelle kostet 1 $ pro Tag. Wählen Sie die Anzahl der Tage — wir berechnen die Gesamtsumme automatisch.",
+    "termsPrefix": "Ich akzeptiere die",
+    "termsLink": "Nutzungsbedingungen",
+    "termsRequired": "Bitte akzeptieren Sie die Nutzungsbedingungen, um fortzufahren.",
+    "errors": {
+      "number": "Geben Sie eine Zahl ein.",
+      "int": "Ganzzahl erforderlich.",
+      "min": "Minimum 1.",
+      "max": "Maximum 10 000.",
+      "maxday": "Maximum 365.",
+      "pickOne": "Wählen Sie mindestens einen Typ (Geld oder Liebe).",
+      "textsCountMismatch": "Die Anzahl der Texte muss gleich sein",
+      "mustBeZero": "Muss 0 sein, wenn der Typ nicht ausgewählt ist.",
+      "mustBeEmpty": "Muss leer sein, wenn der Typ nicht ausgewählt ist."
+    },
+    "pickAny": "Wählen Sie mindestens einen Zelltyp",
+    "left": "Verbleibend",
+    "days": "Tage"
+  },
+  "hide": "Verbergen",
+  "show": "Anzeigen",
+  "password": {
+    "needUpper": "Das Passwort muss mindestens einen Großbuchstaben enthalten",
+    "needLower": "Das Passwort muss mindestens einen Kleinbuchstaben enthalten",
+    "needDigit": "Das Passwort muss mindestens eine Zahl enthalten",
+    "label": "Passwort"
+  },
+  "notfound": {
+    "title": "Seite nicht gefunden",
+    "lead": "Es sieht so aus, als hätten Sie eine Seite geöffnet, die es nicht gibt. Gehen wir zurück.",
+    "actions": {
+      "back": "Zurück",
+      "home": "Startseite",
+      "slots": "Boards"
+    },
+    "hint": "Wenn das ein Fehler ist, aktualisieren Sie die Seite oder versuchen Sie es später erneut."
+  },
+  "paymentReturn": {
+    "manualCheck": "Wenn es lange dauert – manuell prüfen",
+    "title": "Zahlungsstatus",
+    "waitTitle": "Zahlung wird verarbeitet",
+    "successTitle": "Zahlung erfolgreich",
+    "failTitle": "Zahlung nicht abgeschlossen",
+    "subtitle": "Wenn sich die Seite nicht automatisch aktualisiert hat, kann es noch ein paar Sekunden dauern.",
+    "waitLead": "Wir prüfen den Status deiner Zahlung…",
+    "successLead": "Zahlung bestätigt. Danke!",
+    "failLead": "Die Zahlung wurde nicht bestätigt oder wurde storniert.",
+    "checking": "Wird geprüft…",
+    "goBoards": "Zu den Boards",
+    "tryAgain": "Erneut versuchen",
+    "refresh": "Aktualisieren",
+    "noOrder": "Bestell-ID fehlt.",
+    "notFound": "Bestellung nicht gefunden.",
+    "fetchError": "Zahlungsstatus konnte nicht abgerufen werden."
+  },
+  "holds": {
+    "title": "Reservierte Zellen",
+    "empty": {
+      "title": "Noch leer"
+    }
+  },
+  "firstName": {
+    "help": "Dieser Name ist für alle neben Ihrer Botschaft sichtbar. Sie können ein Pseudonym verwenden.",
+    "label": "Vorname"
+  },
+  "company": {
+    "location": "Wir sind in der Ukraine ansässig."
+  },
+  "footer": {
+    "tagline": "Wir erschaffen digitale Rituale, die inspirieren.",
+    "rights": "Alle Rechte vorbehalten.",
+    "sections": {
+      "boards": {
+        "title": "Tafeln"
+      },
+      "company": {
+        "title": "Unternehmen"
+      },
+      "social": {
+        "title": "Soziale Netzwerke"
+      },
+      "legal": {
+        "title": "Rechtliches"
+      }
+    },
+    "links": {
+      "board_money": "Tafel des finanziellen Wohlstands",
+      "board_love": "Tafel der Liebe",
+      "board_luck": "Tafel des Glücks",
+      "board_soul": "Tafel der Seele",
+      "board_dream": "Tafel der Träume",
+      "about": "Über uns",
+      "news": "News",
+      "contact": "Kontakt",
+      "tiktok": "TikTok",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "email": "E-Mail",
+      "terms": "Nutzungsbedingungen",
+      "privacy": "Datenschutzerklärung",
+      "cookies": "Cookies"
+    }
+  },
+  "faq": {
+    "title": "Häufig gestellte Fragen",
+    "subtitle": "Kurz über die Tafel, Botschaften und die Bezahlung.",
+    "q1": "Was ist die Froschtafel?",
+    "a1": "Das ist eine Online-Tafel, deren Zellen auf die Erfüllung bestimmter Intentionen ausgerichtet sind. Sie hinterlassen eine kurze Botschaft, wählen die Anzahl der Anzeigetage, und wir „spielen den Frosch“ täglich, um Ihre Intention zu energetisieren.",
+    "q2": "Wie kaufe ich eine Zelle?",
+    "a2": "Klicken Sie auf „Den Weg beginnen“, registrieren Sie sich ggf., wählen Sie eine Zelle und die Anzahl der Tage. Anschließend bezahlen — und Ihre Botschaft erscheint auf der Tafel.",
+    "q3": "Wie viele Tage wird die Botschaft angezeigt?",
+    "a3": "So viele, wie Sie beim Kauf auswählen. Tarif: 1 Zelle pro 1 Tag = 1 $.",
+    "q4": "Kann ich den Text nach der Veröffentlichung ändern oder löschen?",
+    "a4": "Vor der Reservierung — ja. Nach der Reservierung ist der Text fixiert. Für Änderungen erstellen Sie bitte eine neue Botschaft.",
+    "q5": "Gibt es eine Moderation der Botschaften?",
+    "a5": "Ja. Beleidigungen, Hassrede, Inhalte ab 18 sowie personenbezogene Daten Dritter sind verboten. Wir können regelwidrige Botschaften ausblenden. Details — in den Nutzungsbedingungen.",
+    "q6": "Wo kann ich meine Botschaft live sehen?",
+    "a6": "Wir führen Livestreams durch und kündigen den Zeitplan vorab in den sozialen Netzwerken an.",
+    "q7": "Welche Zahlungsmethoden werden unterstützt?",
+    "a7": "Apple Pay, Google Pay und Karte. Die Zahlung wird offiziell über den Unternehmer abgewickelt.",
+    "q8": "Ist meine Botschaft für alle sichtbar?",
+    "a8": "Ja, das ist ein öffentlicher Bereich der Tafel. Veröffentlichen Sie keine personenbezogenen oder vertraulichen Informationen. Details — in der Datenschutzerklärung."
+  },
+  "sidebar": {
+    "watch": "Ansehen",
+    "moneyTitle": "Tafel des finanziellen Wohlstands",
+    "loveTitle": "Tafel der Liebes-Energie",
+    "luckTitle": "Tafel des Glücks",
+    "soulTitle": "Tafel der Seele",
+    "slots": "Meine Zellen",
+    "settings": "Einstellungen",
+    "logout": "Abmelden",
+    "dreamTitle": "Tafel der Träume"
+  },
+  "ritual": {
+    "title": "Wie es funktioniert",
+    "steps": {
+      "1": {
+        "title": "Wählen Sie eine oder mehrere Zellen",
+        "desc": "Je nachdem, auf welchen Tafeln Sie Zellen platzieren möchten."
+      },
+      "2": {
+        "title": "Geben Sie den Text der Botschaft (optional) und die Tage ein",
+        "desc": "1 Zelle = 1 $ pro Tag. 1 Zelle für 3 Tage = 3 $"
+      },
+      "3": {
+        "title": "Reservieren und bezahlen",
+        "desc": "Reservieren Sie die Zellen, wählen Sie die Zahlungsart und bezahlen Sie (Reservierung gilt 10 Minuten)."
+      },
+      "4": {
+        "title": "Das Ergebnis genießen",
+        "desc": "Genieße deine Nachricht oder Askese und erhalte energetisches Feedback vom Frosch (die 'Darbietung' des Frosches ist auf Streaming-Plattformen zu sehen)."
+      }
+    }
+  },
+  "dashboard": {
+    "noresult": "Keine Treffer",
+    "unauthorizedUser": "Nicht autorisierter Benutzer",
+    "luck": "Tafel des Glücks",
+    "search": "Suche nach Nummer oder Inhalt",
+    "prosperityBoard": "Tafel des Wohlbefindens",
+    "dream": "Tafel der Träume",
+    "description": "Ein einfacher, aber wirkungsvoller Raum, um sich auf Wohlbefinden und persönliches Wachstum zu konzentrieren.",
+    "love": "Tafel der Liebes-Energie",
+    "legend": {
+      "empty": "Leer",
+      "taken": "Belegt",
+      "mine": "Meine Zellen"
+    },
+    "cell": "Zelle",
+    "expired": "Abgelaufene Zellen"
+  },
+  "error": "Fehler",
+  "updateFailed": "Aktualisierung fehlgeschlagen",
+  "changePasswordFailed": "Passwortänderung fehlgeschlagen",
+  "amount": "Betrag",
+  "dialog": {
+    "open": "Dialog öffnen",
+    "newCell": {
+      "title": "Zellen kaufen",
+      "descMulti": "Wählen Sie die Anzahl der Zellen und fügen Sie bei Bedarf für jede einen Text hinzu.",
+      "quantity": "Anzahl",
+      "quantityHint": "Sie können bis zu 10 Zellen auf einmal kaufen.",
+      "notes": "Texte für Zellen (optional)",
+      "noteN": "Text",
+      "notePh": "Wunsch / Intention (optional)",
+      "limit": "Maximale Länge",
+      "left": "Verbleibend",
+      "submitMulti": "Zellen kaufen"
+    }
+  },
+  "common": {
+    "cancel": "Abbrechen",
+    "loading": "Wird geladen …",
+    "back": "Zurück",
+    "error": "Etwas ist schiefgelaufen"
+  },
+  "luck": {
+    "title": "Glück"
+  },
+  "soul": {
+    "title": "Seele"
+  },
+  "dream": {
+    "title": "Träume"
+  },
+  "slots": {
+    "successTitle": "Kauf erfolgreich!",
+    "successSubtitle": "Ihre Zell-Nummern:",
+    "money": "Geld",
+    "love": "Liebe",
+    "label": "Energiezellen"
+  },
+  "sort": {
+    "random": "Zufällig"
+  },
+  "until": "bis",
+  "forgotPass": "Passwort vergessen?",
+  "forgotPassDescription": "Stellen Sie Ihr Passwort per E-Mail wieder her",
+  "emailNotFound": "Kein Konto mit dieser E-Mail",
+  "login": "Anmelden",
+  "profile": "Profil",
+  "logout": "Abmelden",
+  "lastName": "Nachname",
+  "email": "E-Mail",
+  "register": "Registrieren",
+  "required": "Pflichtfeld",
+  "minFirstName": "Der Vorname muss mindestens 2 Zeichen haben",
+  "invalidEmail": "Ungültige E-Mail",
+  "shortPassword": "Passwort ist zu kurz",
+  "longPassword": "Passwort ist zu lang",
+  "emailExists": "Ein Benutzer mit dieser E-Mail existiert bereits",
+  "success": "Sie haben sich erfolgreich registriert!",
+  "loginFormDescription": "Melden Sie sich an und beginnen Sie noch heute Ihren energetischen Weg.",
+  "registerFormDescription": "Registrieren Sie sich schnell und beginnen Sie noch heute Ihren energetischen Weg.",
+  "incorrectCredentials": "Falsche E-Mail oder falsches Passwort",
+  "back": "Zurück",
+  "enterCode": "Geben Sie den Code aus der E-Mail ein",
+  "sendCode": "Code senden",
+  "passwordChangedSuccess": "Ihr Passwort wurde erfolgreich geändert",
+  "invalidCode": "Ungültiger Code",
+  "rateLimited": "Zu viele Versuche. Bitte später erneut versuchen.",
+  "emailSendFailed": "E-Mail konnte nicht gesendet werden. Bitte später erneut versuchen.",
+  "savePassword": "Passwort speichern",
+  "dashboardGreeting": "Guten Tag",
+  "settingsTitle": "Einstellungen",
+  "basicSettingsTitle": "Grundeinstellungen",
+  "language": "Sprache",
+  "timezone": "Zeitzone",
+  "saveChanges": "Änderungen speichern",
+  "changePasswordTitle": "Passwort ändern",
+  "currentPassword": "Aktuelles Passwort",
+  "newPassword": "Neues Passwort",
+  "confirmPassword": "Passwort bestätigen",
+  "saveNewPassword": "Neues Passwort speichern",
+  "passwordChangeSuccess": "Passwort erfolgreich geändert!",
+  "basicSettings": "Grundeinstellungen",
+  "save": "Speichern",
+  "updatePassword": "Passwort aktualisieren",
+  "passwordMismatch": "Passwörter stimmen nicht überein",
+  "basicSettingsUpdated": "Einstellungen erfolgreich gespeichert.",
+  "passwordUpdated": "Passwort erfolgreich aktualisiert.",
+  "Cancel": "Schließen",
+  "Save changes": "Änderungen speichern",
+  "ended": "beendet",
+  "inprocess": "in Bearbeitung",
+  "nolimit": "unbefristet",
+  "days": "d",
+  "hours": "h",
+  "minutes": "m",
+  "seconds": "s",
+  "slotsBuyTitle": "Zellenkauf",
+  "slotsBuyDescription": "Wählen Sie Geld, Liebe oder beides",
+  "empty": {
+    "subtitle": "Erwerben Sie Energiezellen und starten Sie noch heute."
+  },
+  "terms": {
+    "title": "Nutzungsbedingungen des Dienstes „Frog Energy“",
+    "intro": "Durch die Nutzung der Website und die Bezahlung bestätigen Sie, dass Sie 18+ sind und diese Bedingungen akzeptieren.",
+    "operator": {
+      "title": "Dienstbetreiber",
+      "body": "Einzelunternehmerin Iryna Filonova (FOP Filonova I. A.), РНОКПП 3489000409, Tscherkasy, Ukraine. E-Mail: support@frog-energy.com. Website: frog-energy.com. Amtssprache der Dokumente — Ukrainisch."
+    },
+    "age": {
+      "title": "Alter und Konto",
+      "body": "Käufe sind nur Nutzern ab 18 Jahren verfügbar. Sie sind für die Richtigkeit Ihrer Angaben und die Sicherheit Ihres Kontos verantwortlich."
+    },
+    "public": {
+      "title": "Öffentliche Botschaften & Lizenz",
+      "body": "Botschaften und öffentliche Namen werden auf der Website angezeigt und können in Streams und sozialen Netzwerken gezeigt/gelesen werden. Mit der Veröffentlichung gewähren Sie eine nicht-exklusive, kostenlose, weltweite Lizenz zur Vervielfältigung, öffentlichen Kommunikation, Darstellung und Anpassung im Rahmen des Dienstes und dessen Promotion."
+    },
+    "content": {
+      "title": "Inhaltsregeln (verboten)",
+      "i1": "Sexuelle Inhalte, Nacktheit, Ausbeutung von Kindern, Gewalt oder Drohungen.",
+      "i2": "Hassrede, Diskriminierung, Extremismus/Terrorismus.",
+      "i3": "Personenbezogene Daten Dritter, Zahlungsdaten, Doxxing.",
+      "i4": "Betrug, Spam, Aufruf zu Schaden oder illegalen Handlungen.",
+      "i5": "Verletzung von Urheber- oder Persönlichkeitsrechten.",
+      "note": "Der Betreiber darf solche Inhalte moderieren, ausblenden oder löschen und Konten ohne Erstattung sperren."
+    },
+    "booking": {
+      "title": "Zellen, Reservierung, Fristen",
+      "i1": "Sie können eine oder mehrere Zellen wählen (auch eine bestimmte Nummer, wenn frei).",
+      "i2": "Die Reservierung gilt 10 Minuten; ohne Zahlung kehren die Zellen in den Pool zurück.",
+      "i3": "Die Veröffentlichung beginnt nach Zahlungsbestätigung und dauert die gewählte Anzahl an Tagen."
+    },
+    "pricing": {
+      "title": "Preise & Bezahlung",
+      "i1": "Grundlogik: 1 Zelle = 1 Tag Veröffentlichung. Der tatsächliche Preis/Währung wird an der Kasse angezeigt.",
+      "i2": "Preise können sich künftig ändern, bereits bezahlte Platzierungen bleiben unberührt.",
+      "i3": "Zahlungen werden über den Anbieter Plata by mono abgewickelt."
+    },
+    "streams": {
+      "title": "Streams",
+      "body": "Wir spielen täglich den musikalischen Frosch und lesen gelegentlich Botschaften in Livestreams oder Aufzeichnungen (TikTok, YouTube usw.). Zellen können nur auf der Website gekauft werden; das Einsenden aus Streams ist nicht vorgesehen."
+    },
+    "refunds": {
+      "title": "Rückerstattungen",
+      "i1": "Rückerstattungen sind grundsätzlich nicht vorgesehen.",
+      "i2": "Ausnahme: technischer Fehler unsererseits, wenn die Botschaft im bezahlten Zeitraum nicht veröffentlicht wurde.",
+      "i3": "Erstattung über die ursprüngliche Zahlungsmethode; Bearbeitung bis zu 14 Tagen."
+    },
+    "disclaimer": {
+      "title": "Haftungsausschluss & Verantwortung",
+      "body": "Der Dienst wird „wie gesehen“ zu Unterhaltungszwecken bereitgestellt und garantiert keine Wunscherfüllung. Die maximale Haftung ist auf den Betrag Ihrer zuletzt bezahlten Bestellung begrenzt."
+    },
+    "ip": {
+      "title": "Geistiges Eigentum",
+      "body": "Marke, Design, Inhalte und Code gehören dem Betreiber oder werden rechtmäßig genutzt. Kopieren ohne Erlaubnis ist verboten."
+    },
+    "complaints": {
+      "title": "Beschwerden & Kontakt",
+      "body": "Schreiben Sie an support@frog-energy.com — schildern Sie das Problem und fügen Sie Links/Belege bei."
+    },
+    "law": {
+      "title": "Anwendbares Recht & Gerichtsstand",
+      "body": "Es gilt das Recht der Ukraine. Streitigkeiten werden an den Gerichten am Sitz des Betreibers in der Ukraine entschieden."
+    },
+    "changes": "Die aktuelle Fassung der Bedingungen wird auf der Website veröffentlicht; wesentliche Änderungen kündigen wir auf der Website und/oder per E-Mail an."
+  },
+  "privacy": {
+    "title": "Datenschutzerklärung „Frog Energy“",
+    "intro": "Hier erläutern wir, welche Daten wir erheben, wie wir sie nutzen, an wen wir sie weitergeben und welche Rechte Sie haben. Durch Nutzung der Website und Bezahlung stimmen Sie dieser Erklärung zu.",
+    "controller": {
+      "title": "Betreiber & Kontakt",
+      "body": "FOP Filonova Iryna Andriivna (FOP Filonova I. A.), РНОКПП 3489000409, Tscherkasy, Ukraine. E-Mail: support@frog-energy.com. Website: frog-energy.com. Die offizielle Dokumentensprache ist Ukrainisch."
+    },
+    "scope": {
+      "title": "Geltungsbereich",
+      "body": "Website und Dienste von Frog Energy: Kauf von Zellen, Veröffentlichung von Botschaften sowie deren Anzeige/Vorlesen in Livestreams und Aufzeichnungen (TikTok, YouTube usw.). Das Einsenden von Botschaften ist nur auf der Website möglich."
+    },
+    "data": {
+      "title": "Welche Daten wir erheben",
+      "i1": "Kontodaten: Name/Pseudonym, Sprache/Locale, Kontoeinstellungen.",
+      "i2": "Öffentliche Inhalte: Ihre Botschaften und öffentlichen Namen auf der Website und in Streams.",
+      "i3": "Zahlungen: Zahlungsvorgang und -status über den Anbieter (Kartendaten speichern wir nicht).",
+      "i4": "Technische Daten & Cookies: IP, Geräte/Browsertyp, Ereignisse, Analysen (Google Analytics).",
+      "i5": "Kommunikation: E-Mail (Bestätigungen, Quittungen, Support-Antworten).",
+      "note": "Mit der Veröffentlichung verstehen Sie, dass Inhalte auf der Website und auf externen Plattformen erscheinen können."
+    },
+    "purpose": {
+      "title": "Wofür wir Daten verwenden",
+      "i1": "Erbringung des Dienstes: Konto, Platzierung von Zellen und Botschaften.",
+      "i2": "Zahlung & Buchhaltung: Abwicklung von Transaktionen, Belege, steuerliche Pflichten.",
+      "i3": "Moderation & Sicherheit: Regelkonformität, Missbrauchsbekämpfung.",
+      "i4": "Kommunikation: System-E-Mails, Support.",
+      "i5": "Analyse & Verbesserung: Nutzungsstatistiken (Google Analytics).",
+      "i6": "Promo & öffentliche Darstellung: Anzeige/Vorlesen von Botschaften in Streams und sozialen Netzwerken.",
+      "i7": "Rechtliche Anforderungen: Antworten auf rechtmäßige behördliche Anfragen.",
+      "bases": "Rechtsgrundlagen: Vertrag (Dienstleistung), berechtigtes Interesse (Sicherheit, Analyse), Einwilligung (Cookies/Marketing), gesetzliche Pflicht (Buchhaltung)."
+    },
+    "cookies": {
+      "title": "Cookies & Analyse",
+      "i1": "Sitzungs-Cookies für die Funktion der Website und die Anmeldung.",
+      "i2": "Authentifizierungs-Tokens (z. B. auth/session).",
+      "i3": "Präferenzen (Sprache/Locale, UI-Zustand).",
+      "i4": "Analyse-Cookies (Google Analytics) zum Verständnis der Nutzung.",
+      "i5": "Einwilligungsbanner: „Akzeptieren / Ablehnen / Anpassen“. Verwaltung auch im Browser möglich.",
+      "note": "Speicherdauer abhängig vom Cookie-Typ und Ihren Browser/Anbieter-Einstellungen."
+    },
+    "sharing": {
+      "title": "An wen wir Daten weitergeben",
+      "i1": "Hosting (HOSTiQ.ua) — Hosting und Verarbeitung der Website.",
+      "i2": "Zahlungsanbieter (Plata by mono) — Zahlungsabwicklung (Kartendaten erhalten wir nicht).",
+      "i3": "Analyse (Google Analytics) — Besuchsstatistiken.",
+      "i4": "Öffentliche Plattformen (TikTok, YouTube usw.) — Anzeige/Vorlesen Ihrer öffentlichen Inhalte.",
+      "i5": "Behörden — nur bei gesetzlicher Verpflichtung."
+    },
+    "transfers": {
+      "title": "Internationale Übermittlungen",
+      "body": "Einige Anbieter (z. B. Google) verarbeiten Daten außerhalb der Ukraine/EU. Wir nutzen deren Standardvertragsklauseln und angemessene Sicherheitsmaßnahmen."
+    },
+    "retention": {
+      "title": "Speicherdauer",
+      "i1": "Kontodaten — solange das Konto aktiv ist und für eine angemessene Zeit danach (Backups/gesetzliche Pflichten).",
+      "i2": "Öffentliche Botschaften — als Teil des Dienstes und öffentlichen Archivs.",
+      "i3": "Zahlungsbelege — gemäß geltendem Recht (Buchhaltung/Steuern).",
+      "i4": "Cookies/Analyse — entsprechend Ihrem Browser und den Richtlinien der Anbieter."
+    },
+    "rights": {
+      "title": "Ihre Rechte",
+      "i1": "Zugriff auf Ihre Daten und Erhalt einer Kopie.",
+      "i2": "Berichtigung unrichtiger/unvollständiger Daten.",
+      "i3": "Löschung von Daten in gesetzlich vorgesehenen Fällen.",
+      "i4": "Einschränkung der Verarbeitung und Widerspruch.",
+      "i5": "Datenübertragbarkeit (falls anwendbar).",
+      "i6": "Widerruf der Einwilligung (bei einwilligungsbasierten Vorgängen).",
+      "note": "Zur Ausübung Ihrer Rechte schreiben Sie uns per E-Mail — wir antworten in angemessener Frist."
+    },
+    "children": {
+      "title": "Minderjährige",
+      "body": "Der Dienst richtet sich nicht an Personen unter 18 Jahren. Bei Kenntnisnahme löschen wir entsprechende Kontodaten."
+    },
+    "security": {
+      "title": "Sicherheit",
+      "body": "Wir wenden technische und organisatorische Maßnahmen an; absolute Sicherheit im Internet kann jedoch nicht garantiert werden."
+    },
+    "contact": {
+      "title": "Kontakt",
+      "body": "Fragen zu personenbezogenen Daten: support@frog-energy.com. Bitte Betreff und Details angeben."
+    },
+    "changes": "Wir können diese Erklärung aktualisieren. Die aktuelle Version steht auf der Website; wesentliche Änderungen werden auf der Website und/oder per E-Mail bekanntgegeben."
+  },
+  "cookies": {
+    "title": "Cookie-Richtlinie „Frog Energy“",
+    "intro": "Hier erklären wir, welche Cookies die Website verwendet, zu welchen Zwecken und wie Sie diese verwalten können.",
+    "what": {
+      "title": "Was sind Cookies",
+      "body": "Cookies sind kleine Dateien, die die Website im Browser speichert. Sie helfen bei der Funktion der Website, merken sich Einstellungen und liefern anonymisierte Statistiken."
+    },
+    "types": {
+      "title": "Arten von Cookies, die wir nutzen",
+      "i1": "Strikt notwendige — grundlegende Funktionen (Login, Sitzungen). Ohne sie funktioniert die Website nicht.",
+      "i2": "Funktionale — merken sich Präferenzen (Sprache, UI-Zustand).",
+      "i3": "Analyse — helfen uns, die Nutzung zu verstehen (Google Analytics). Wir sehen nur aggregierte Berichte.",
+      "i4": "Marketing/Drittanbieter — können von eingebetteten Plattformen gesetzt werden (z. B. Player oder Widgets)."
+    },
+    "list": {
+      "title": "Beispiele, die wir verwenden können",
+      "body": "Die Namen können je nach Website-Version und Anbietern variieren:",
+      "i1": "Service: session, auth/session-token — für Authentifizierung und Kontofunktion.",
+      "i2": "Präferenzen: Next-Locale, sidebar_state — für Sprache und UI-Zustand.",
+      "i3": "Technisch (Next.js): __next_hmr_refresh_hash__ — Entwicklung/Technik.",
+      "i4": "Analyse: _ga, _ga_* — Google Analytics (anonymisierte Statistiken).",
+      "i5": "Zahlungsanbieter können während des Checkouts eigene Cookies auf ihren Domains setzen.",
+      "note": "Der genaue Satz hängt von Ihren Aktionen, Einstellungen und den verwendeten Integrationen ab."
+    },
+    "consent": {
+      "title": "Cookie-Einwilligung",
+      "i1": "Beim ersten Besuch zeigen wir ein Banner: „Akzeptieren / Ablehnen / Anpassen“.",
+      "i2": "Strikt notwendige Cookies werden immer gesetzt, da die Website von ihnen abhängt.",
+      "i3": "Analyse- und Marketing-Cookies werden nur mit Ihrer Einwilligung aktiviert.",
+      "note": "Sie können Ihre Auswahl jederzeit in den Browser-Einstellungen ändern oder das Banner erneut öffnen (falls verfügbar)."
+    },
+    "manage": {
+      "title": "Cookies verwalten",
+      "body": "Sie können vorhandene Cookies löschen und das Setzen im Browser blockieren. Hinweis: Das Blockieren strikt notwendiger Cookies kann die Website beeinträchtigen."
+    },
+    "thirdparty": {
+      "title": "Drittanbieter-Cookies & Anbieter",
+      "body": "Wir nutzen Google Analytics für Statistiken. Cookies können auch von Zahlungsanbietern beim Checkout sowie von eingebetteten Plattformen (z. B. TikTok, YouTube) gesetzt werden."
+    },
+    "retention": {
+      "title": "Speicherdauer",
+      "body": "Die Lebensdauer hängt vom Typ und Ihrem Browser ab. Sitzungs-Cookies verfallen beim Schließen des Browsers; persistente halten typischerweise 1 Tag bis 24 Monate."
+    },
+    "updates": "Wir können diese Richtlinie aktualisieren. Die aktuelle Version ist stets auf der Website verfügbar.",
+    "contact": "Fragen zu Cookies: support@frog-energy.com"
+  },
+  "manualError": "Fehler",
+  "signupFailed": "Dieser Benutzer existiert nicht"
 }

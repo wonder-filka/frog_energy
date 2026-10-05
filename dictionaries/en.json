@@ -8,5 +8,612 @@
   },
   "cta": {
     "welcome": "Welcome"
+  },
+  "contact": {
+    "getInTouch": "Get in touch",
+    "description": "Have a question, a collaboration idea, or feedback? Email us or message us on Telegram."
+  },
+  "homePage": "Home page",
+  "comingSoon": "Coming soon...",
+  "nextBroadcast": "Next broadcast:",
+  "prevBroadcast": "Previous broadcast:",
+  "weekTopic": "Weekly topic and challenge (find it in the Telegram channel and group):",
+  "showMore": "Show more",
+  "shown": "Shown",
+  "of": "of",
+  "home": {
+    "header": {
+      "welcome": "Welcome",
+      "welcomeAnon": "Welcome!",
+      "energy": "Your energy"
+    },
+    "popular": {
+      "title": "Popular Cells",
+      "empty": "No popular cells yet."
+    },
+    "hero": {
+      "title": "The Energy Frog: a symbol of luck, abundance, and prosperity",
+      "desc": "Send a message or an ascetic practice (tapasya) to the Frog — she will help and direct the energy.",
+      "start": "Start your journey",
+      "read": "Learn about the Frog"
+    },
+    "symbolism": {
+      "title": "The Symbolism of the Frog"
+    },
+    "features": {
+      "money": {
+        "title": "Wealth",
+        "description": "In Chinese and Slavic traditions, the frog is a symbol of longevity, wealth, and fertility."
+      },
+      "love": {
+        "title": "Love",
+        "description": "In Ancient Greece, the frog was considered a symbol of harmony in relationships. It was associated with Aphrodite, the goddess of love and fertility."
+      },
+      "luck": {
+        "title": "Luck",
+        "description": "For the Aztecs and Mayans, the frog was associated with rain and a successful harvest."
+      },
+      "soul": {
+        "title": "Spirituality",
+        "description": "In Ancient Egypt, the frog embodied the goddess of life and rebirth."
+      },
+      "dream": {
+        "title": "Dreams",
+        "description": "In ancient alchemy, the frog symbolized secret knowledge and the fulfillment of desires."
+      }
+    },
+    "desc": {
+      "1": "Every day we perform a ritual with a wooden frog guiro instrument.",
+      "2": "The croaking carries the words and wishes published on the site.",
+      "3": "Buy a cell.",
+      "4": "Leave your text.",
+      "5": "It becomes part of the magical act.",
+      "6": "Watch the live streams to see your message come to life!",
+      "7": "Turn your words into magic. Be part of the ritual.",
+      "title": "How it works"
+    }
+  },
+  "info": {
+    "announcements": {
+      "title": "Streams & Announcements",
+      "empty": "No announcements yet."
+    },
+    "energy": {
+      "title": "What is Energy?",
+      "body": "Energy is the platform’s internal currency. Earn it by completing tasks, joining activities, and contributing to the community. The more active you are, the more energy you can spend on perks and goods.",
+      "cta": "Go to tasks & referral program"
+    },
+    "shop": {
+      "title": "Online Shop",
+      "body": "Use your energy to redeem goods and bonuses. Increase your balance by being active on the platform.",
+      "cta": "Open the shop"
+    },
+    "community": {
+      "title": "Join the community",
+      "telegram": "Telegram community",
+      "discord": "Discord server"
+    },
+    "settings": {
+      "title": "Account Settings",
+      "profile": "Profile",
+      "openLink": "Open settings page"
+    },
+    "howto": {
+      "title": "Getting Started",
+      "body": "Create your profile, pick tasks you like, and join the community. Track your progress and redeem energy for rewards."
+    },
+    "ref": {
+      "title": "Referral Program",
+      "body": "Invite friends and earn additional energy from their activity.",
+      "cta": "Open referral page"
+    }
+  },
+  "buyAgain": "Buy again",
+  "like": "Like",
+  "unlike": "Unlike",
+  "auth": {
+    "likeNeedsLogin": "Log in or sign up to like posts.",
+    "continueToBuy": "Continue to complete your purchase",
+    "choose": "Log in or Sign up",
+    "required": "Please sign in."
+  },
+  "buyForm": {
+    "noUserId": "Please log in or sign up to continue with the purchase.",
+    "pickRandomNumber": "Pick a random number",
+    "unknownError": "Unknown error. Please try again.",
+    "noSelected": "No cells selected in the form.",
+    "daysChoose": "Choose how many days to display your message on this board",
+    "pickNumber": "Choose a preferred number",
+    "preferredNumber": "Preferred number",
+    "numberTaken": "This number is already taken, please choose another one",
+    "money": "Money",
+    "love": "Love",
+    "quantityMoney": "Quantity (money)",
+    "quantityLove": "Quantity (love)",
+    "quantityHint": "You can purchase up to 10 cells at once.",
+    "textN": "Text",
+    "textPlaceholder": "Wish / intention",
+    "limit": "Max length: 160",
+    "daysSumm": "days",
+    "sum": "Total",
+    "submit": {
+      "label": "Buy cells",
+      "first": "Select cells",
+      "second": "Book cells"
+    },
+    "pricingHintShort": "Each cell is $1 per day. Pick the number of days — we’ll calculate the total automatically.",
+    "termsPrefix": "I accept the",
+    "termsLink": "Terms of Use",
+    "termsRequired": "Please accept the Terms of Use to continue.",
+    "back": "Go back",
+    "quantityLuck": "Quantity (luck)",
+    "quantitySoul": "Quantity (soul)",
+    "quantityDream": "Quantity (dreams)",
+    "errors": {
+      "number": "Enter a number.",
+      "int": "Integer required.",
+      "min": "Minimum 1.",
+      "max": "Maximum 10 000.",
+      "maxday": "Maximum 365.",
+      "pickOne": "Select at least one type (Money or Love).",
+      "textsCountMismatch": "The number of texts must equal",
+      "mustBeZero": "Must be 0 if the type is not selected.",
+      "mustBeEmpty": "Must be empty if the type is not selected."
+    },
+    "pickAny": "Select at least one type of cells",
+    "left": "Remaining",
+    "days": "Days"
+  },
+  "hide": "Hide",
+  "show": "Show",
+  "password": {
+    "needUpper": "Password must contain at least one uppercase letter",
+    "needLower": "Password must contain at least one lowercase letter",
+    "needDigit": "Password must contain at least one digit",
+    "label": "Password"
+  },
+  "notfound": {
+    "title": "Page not found",
+    "lead": "It looks like you opened a page that doesn’t exist. Let’s go back.",
+    "actions": {
+      "back": "Go back",
+      "home": "Home",
+      "slots": "Boards"
+    },
+    "hint": "If you believe this is a mistake, try refreshing or come back a bit later."
+  },
+  "paymentReturn": {
+    "manualCheck": "If it takes long — check manually",
+    "title": "Payment status",
+    "waitTitle": "Payment is processing",
+    "successTitle": "Payment successful",
+    "failTitle": "Payment not completed",
+    "subtitle": "If the page didn’t update automatically, it may take a few more seconds.",
+    "waitLead": "We’re checking your payment status…",
+    "successLead": "Payment confirmed. Thank you!",
+    "failLead": "Payment was not confirmed or was canceled.",
+    "checking": "Checking…",
+    "goBoards": "Go to boards",
+    "tryAgain": "Try again",
+    "refresh": "Refresh",
+    "noOrder": "Order ID is missing.",
+    "notFound": "Order not found.",
+    "fetchError": "Failed to fetch payment status."
+  },
+  "holds": {
+    "title": "Reserved Cells",
+    "empty": {
+      "title": "Nothing yet"
+    }
+  },
+  "firstName": {
+    "help": "This name will be visible to everyone next to your message. You can use a nickname.",
+    "label": "First name"
+  },
+  "company": {
+    "location": "We are based in Ukraine."
+  },
+  "footer": {
+    "tagline": "Designing digital rituals that inspire.",
+    "rights": "All rights reserved.",
+    "sections": {
+      "boards": {
+        "title": "Boards"
+      },
+      "company": {
+        "title": "Company"
+      },
+      "social": {
+        "title": "Socials"
+      },
+      "legal": {
+        "title": "Legal"
+      }
+    },
+    "links": {
+      "board_money": "Financial Prosperity Board",
+      "board_love": "Love Energy Board",
+      "board_luck": "Luck Board",
+      "board_soul": "Soul Board",
+      "board_dream": "Dream Board",
+      "about": "About us",
+      "news": "News",
+      "contact": "Contact",
+      "tiktok": "TikTok",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "email": "E-mail",
+      "terms": "Terms",
+      "privacy": "Privacy",
+      "cookies": "Cookies"
+    }
+  },
+  "manualError": "Error",
+  "signupFailed": "This user does not exist",
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Briefly about the board, messages, and payments.",
+    "q1": "What is the Frog Board?",
+    "a1": "It’s an online board whose cells are charged to fulfill specific intentions. You leave a short message, choose how many days to display it, and we play the frog every day to energize your intention.",
+    "q2": "How to buy a cell?",
+    "a2": "Click “Start the Journey”, register if necessary, choose a cell and the number of days. Then pay — and your message will appear on the board.",
+    "q3": "How many days is the message displayed?",
+    "a3": "For as many days as you choose when purchasing. The rate is 1 cell per 1 day = $1.",
+    "q4": "Can I change or delete my message after posting?",
+    "a4": "Before reserving the cell — yes. After reservation, the text becomes fixed. If you need to edit, create a new message.",
+    "q5": "Is there moderation?",
+    "a5": "Yes. Insults, hate speech, adult content, and third-party personal data are prohibited. We may hide messages that violate the rules. See Terms of Use for details.",
+    "q6": "Where can I see my message live?",
+    "a6": "We host live streams and announce the schedule in advance on social media.",
+    "q7": "Which payment methods are supported?",
+    "a7": "Apple Pay, Google Pay, or credit card. Payments are processed officially.",
+    "q8": "Is my message visible to everyone?",
+    "a8": "Yes, it’s a public section of the board. Do not post personal or confidential information. See the Privacy Policy for more details."
+  },
+  "sidebar": {
+    "watch": "Watch",
+    "moneyTitle": "Financial Prosperity Board",
+    "loveTitle": "Love Energy Board",
+    "slots": "My cells",
+    "soulTitle": "Soul Board",
+    "settings": "Settings",
+    "logout": "Log out",
+    "dreamTitle": "Dream Board",
+    "luckTitle": "Luck Board"
+  },
+  "ritual": {
+    "title": "How it works",
+    "steps": {
+      "1": {
+        "title": "Select one or several cells",
+        "desc": "Depending on which boards you want to place the cells on."
+      },
+      "2": {
+        "title": "Enter a message (optional) and publication days",
+        "desc": "1 cell = $1 per day. 1 cell for 3 days = $3"
+      },
+      "3": {
+        "title": "Reserve and pay",
+        "desc": "Reserve cells, choose a payment method and pay (reservation lasts 10 minutes)."
+      },
+      "4": {
+        "title": "Enjoy the result",
+        "desc": "Enjoy your message or ascetic practice and receive energetic feedback from the Frog (the Frog's 'performance' can be seen on streaming platforms)."
+      }
+    }
+  },
+  "error": "Error",
+  "dashboard": {
+    "noresult": "No results found",
+    "luck": "Luck Board",
+    "dream": "Dream Board",
+    "search": "Search by number or content",
+    "prosperityBoard": "Prosperity Board",
+    "unauthorizedUser": "Unauthorized user",
+    "description": "A simple yet powerful space to focus on well-being and personal growth.",
+    "love": "Love Energy Board",
+    "legend": {
+      "empty": "Empty",
+      "taken": "Taken",
+      "mine": "My cells"
+    },
+    "cell": "Cell",
+    "expired": "Expired cells"
+  },
+  "updateFailed": "Update failed",
+  "changePasswordFailed": "Password change failed",
+  "amount": "Amount",
+  "dialog": {
+    "open": "Open dialog",
+    "newCell": {
+      "title": "Buy Cells",
+      "descMulti": "Choose the number of cells and optionally add text for each.",
+      "quantity": "Quantity",
+      "quantityHint": "You can buy no more than 10 cells at a time.",
+      "notes": "Texts for cells (optional)",
+      "noteN": "Text",
+      "notePh": "Wish / intention (optional)",
+      "limit": "Max length",
+      "left": "Remaining",
+      "submitMulti": "Buy cells"
+    }
+  },
+  "common": {
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "back": "Go back",
+    "error": "Something went wrong"
+  },
+  "luck": {
+    "title": "Luck"
+  },
+  "soul": {
+    "title": "Soul"
+  },
+  "dream": {
+    "title": "Dreams"
+  },
+  "slots": {
+    "successTitle": "Purchase successful!",
+    "successSubtitle": "Your slot numbers:",
+    "money": "Money",
+    "love": "Love",
+    "label": "Energy cells"
+  },
+  "sort": {
+    "random": "Random"
+  },
+  "until": "until",
+  "forgotPass": "Forgot password?",
+  "forgotPassDescription": "Recover your password via email",
+  "emailNotFound": "No account with this email",
+  "login": "Log in",
+  "profile": "Profile",
+  "logout": "Log out",
+  "lastName": "Last name",
+  "email": "Email",
+  "register": "Sign up",
+  "required": "Required field",
+  "minFirstName": "First name must be at least 2 characters",
+  "invalidEmail": "Invalid email",
+  "shortPassword": "Password is too short",
+  "longPassword": "Password is too long",
+  "emailExists": "A user with this email already exists",
+  "success": "You have successfully registered!",
+  "loginFormDescription": "Sign in and start your energy journey today.",
+  "registerFormDescription": "Complete a quick registration and start your energy journey today.",
+  "incorrectCredentials": "Incorrect email or password",
+  "back": "Back",
+  "enterCode": "Enter the code from the email",
+  "sendCode": "Send code",
+  "passwordChangedSuccess": "Your password has been changed successfully",
+  "invalidCode": "Invalid code",
+  "rateLimited": "Too many attempts. Try again later.",
+  "emailSendFailed": "Failed to send email. Please try again later.",
+  "savePassword": "Save password",
+  "dashboardGreeting": "Good day",
+  "settingsTitle": "Settings",
+  "basicSettingsTitle": "Basic settings",
+  "language": "Language",
+  "timezone": "Time zone",
+  "saveChanges": "Save changes",
+  "changePasswordTitle": "Change password",
+  "currentPassword": "Current password",
+  "newPassword": "New password",
+  "confirmPassword": "Confirm password",
+  "saveNewPassword": "Save new password",
+  "passwordChangeSuccess": "Password changed successfully!",
+  "basicSettings": "Basic settings",
+  "save": "Save",
+  "updatePassword": "Update password",
+  "passwordMismatch": "Passwords do not match",
+  "basicSettingsUpdated": "Settings saved successfully.",
+  "passwordUpdated": "Password updated successfully.",
+  "Cancel": "Close",
+  "Save changes": "Save changes",
+  "ended": "ended",
+  "inprocess": "in progress",
+  "nolimit": "no limit",
+  "days": "d",
+  "hours": "h",
+  "minutes": "m",
+  "seconds": "s",
+  "slotsBuyTitle": "Buy cells",
+  "slotsBuyDescription": "Choose money, love, or both",
+  "empty": {
+    "subtitle": "Purchase your energy cells and start today."
+  },
+  "terms": {
+    "title": "Terms of Use — Frog Energy",
+    "intro": "By using the website and completing a purchase, you confirm you are 18+ and accept these Terms.",
+    "operator": {
+      "title": "Service Operator",
+      "body": "Sole Proprietor Iryna Filonova, TIN 3489000409, Cherkasy, Ukraine. E-mail: support@frog-energy.com. Website: frog-energy.com. The official document language is Ukrainian."
+    },
+    "age": {
+      "title": "Age & Account",
+      "body": "Purchases are available only to users aged 18+. You are responsible for accurate data and account security."
+    },
+    "public": {
+      "title": "Public Messages & License",
+      "body": "Messages and public names appear on the website and may be shown/read in streams and social media. By posting a message, you grant a non-exclusive, royalty-free, worldwide license to reproduce, publicly communicate, display and adapt it within the service and its promotion."
+    },
+    "content": {
+      "title": "Content Rules (Prohibited)",
+      "i1": "Sexual content, nudity, child exploitation, violence or threats.",
+      "i2": "Hate speech, discrimination, extremism/terrorism.",
+      "i3": "Third-party personal data, payment details, doxxing.",
+      "i4": "Fraud, spam, calls for harm or illegal activity.",
+      "i5": "Infringement of copyrights or rights of publicity.",
+      "note": "We may moderate, hide or remove such materials and block accounts without refunds."
+    },
+    "booking": {
+      "title": "Cells, Reservation, Timing",
+      "i1": "You may select one or multiple cells (including a specific number if available).",
+      "i2": "Reservation lasts 10 minutes; without payment, cells return to the pool.",
+      "i3": "Publication starts after payment confirmation and lasts for the selected number of days."
+    },
+    "pricing": {
+      "title": "Pricing & Payment",
+      "i1": "Baseline: 1 cell = 1 day. Actual price/currency is shown at checkout.",
+      "i2": "Prices may change in the future, but already paid placements are unaffected.",
+      "i3": "Payments are processed via Plata by mono."
+    },
+    "streams": {
+      "title": "Streams",
+      "body": "We play the musical frog daily and may occasionally read messages during live streams or recordings (TikTok, YouTube, etc.). Cells can be purchased only on the website; submitting messages from streams isn’t supported."
+    },
+    "refunds": {
+      "title": "Refunds",
+      "i1": "Refunds are generally not provided.",
+      "i2": "Exception: a technical error on our side when the message was not published during the paid period.",
+      "i3": "Refunds are issued via the original payment method; processing may take up to 14 days."
+    },
+    "disclaimer": {
+      "title": "Disclaimer & Liability",
+      "body": "The service is provided “as is” for entertainment and does not guarantee wish fulfillment. Our maximum liability is limited to the amount of your last paid order."
+    },
+    "ip": {
+      "title": "Intellectual Property",
+      "body": "Brand, design, content, and code belong to the Operator or are used lawfully. Copying without permission is prohibited."
+    },
+    "complaints": {
+      "title": "Complaints & Contact",
+      "body": "Contact: support@frog-energy.com. Describe the issue and include links/evidence."
+    },
+    "law": {
+      "title": "Governing Law & Jurisdiction",
+      "body": "Ukrainian law applies. Disputes are settled by Ukrainian courts at the Operator’s location."
+    },
+    "changes": "The current version is published on the website; material changes will be announced on the site and/or by e-mail."
+  },
+  "privacy": {
+    "title": "Frog Energy Privacy Policy",
+    "intro": "This Policy explains what data we collect, how we use it, who we share it with, and your rights. By using the site and making a payment, you agree to this Policy.",
+    "controller": {
+      "title": "Controller & Contact",
+      "body": "FOP Filonova Iryna Andriivna (FOP Filonova I. A.), TIN 3489000409, Cherkasy, Ukraine. E-mail: support@frog-energy.com. Website: frog-energy.com. The official version of documents is in Ukrainian."
+    },
+    "scope": {
+      "title": "Scope",
+      "body": "The Frog Energy website and services: purchasing cells, publishing messages, and showing/reading them in livestreams and recordings (TikTok, YouTube, etc.). Messages can be submitted only on the website."
+    },
+    "data": {
+      "title": "Data we collect",
+      "i1": "Account data: name/pseudonym, language/locale, account settings.",
+      "i2": "Public content: your messages and public names shown on the site and in streams.",
+      "i3": "Payments: payment fact and status via the provider (we do not store card details).",
+      "i4": "Technical data & cookies: IP, device/browser type, event logs, analytics (Google Analytics).",
+      "i5": "Communications: e-mail (confirmations, receipts, support).",
+      "note": "By submitting public content, you understand it may appear on our site and external platforms."
+    },
+    "purpose": {
+      "title": "How we use data",
+      "i1": "Providing the service: account, cell and message placement.",
+      "i2": "Payments & bookkeeping: processing transactions, receipts, tax obligations.",
+      "i3": "Moderation & safety: policy compliance, fraud/abuse prevention.",
+      "i4": "Communications: system e-mails, support replies.",
+      "i5": "Analytics & improvements: usage statistics (Google Analytics).",
+      "i6": "Promo & public display: showing/reading messages in streams and social media.",
+      "i7": "Legal compliance: responding to lawful requests.",
+      "bases": "Legal bases: contract (service provision), legitimate interests (security, analytics), consent (cookies/marketing), legal obligation (accounting)."
+    },
+    "cookies": {
+      "title": "Cookies & analytics",
+      "i1": "Session cookies for site functionality and sign-in.",
+      "i2": "Authentication tokens (e.g., auth/session).",
+      "i3": "Preferences (language/locale, UI state).",
+      "i4": "Analytics cookies (Google Analytics) to understand usage.",
+      "i5": "Consent banner: “Accept / Decline / Customize”. You can also manage cookies in your browser.",
+      "note": "Retention depends on cookie type and your browser/provider settings."
+    },
+    "sharing": {
+      "title": "Sharing",
+      "i1": "Hosting (HOSTiQ.ua) — site hosting/processing.",
+      "i2": "Payments (Plata by mono) — processing payments; card data is not shared with us.",
+      "i3": "Analytics (Google Analytics) — visit statistics.",
+      "i4": "Public platforms (TikTok, YouTube, etc.) — displaying/reading your public content.",
+      "i5": "Authorities — only where legally required."
+    },
+    "transfers": {
+      "title": "International transfers",
+      "body": "Some providers (e.g., Google) may process data outside Ukraine/EU. We rely on their standard contractual safeguards and apply reasonable security measures."
+    },
+    "retention": {
+      "title": "Retention",
+      "i1": "Account data — while the account is active and for a reasonable time after deletion (backups/legal duties).",
+      "i2": "Public messages — as part of the service and public archives.",
+      "i3": "Payment records — per applicable law (accounting/tax).",
+      "i4": "Cookies/analytics — per your browser and provider policies."
+    },
+    "rights": {
+      "title": "Your rights",
+      "i1": "Access your data and obtain a copy.",
+      "i2": "Rectify inaccurate or incomplete data.",
+      "i3": "Erase data in cases provided by law.",
+      "i4": "Restrict processing and object to processing.",
+      "i5": "Data portability (where applicable).",
+      "i6": "Withdraw consent (for consent-based processing).",
+      "note": "To exercise your rights, e-mail us — we’ll respond within a reasonable time."
+    },
+    "children": {
+      "title": "Minors",
+      "body": "The service is not intended for persons under 18. If we learn an account belongs to a minor, we will delete the data."
+    },
+    "security": {
+      "title": "Security",
+      "body": "We apply technical and organizational measures, yet no online service can guarantee absolute security."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Questions about your data: support@frog-energy.com. Please include a clear subject and details."
+    },
+    "changes": "We may update this Policy. The current version is on the website; material changes will be announced on the site and/or via e-mail."
+  },
+  "cookies": {
+    "title": "Frog Energy Cookies Policy",
+    "intro": "This page explains what cookies we use, why we use them, and how you can manage your choices.",
+    "what": {
+      "title": "What cookies are",
+      "body": "Cookies are small files stored in your browser. They help the site function, remember your preferences, and collect anonymized analytics."
+    },
+    "types": {
+      "title": "Types of cookies we use",
+      "i1": "Strictly necessary — core functionality (sign-in, sessions). Without them the site won’t work.",
+      "i2": "Functional — remember your preferences (language, UI state).",
+      "i3": "Analytics — help us understand usage (Google Analytics). We only see aggregated reports.",
+      "i4": "Marketing/third-party — may be set by embedded platforms (e.g., players or widgets)."
+    },
+    "list": {
+      "title": "Examples we may use",
+      "body": "Names can vary by site version and providers:",
+      "i1": "Service: session, auth/session-token — authentication and account functionality.",
+      "i2": "Preferences: Next-Locale, sidebar_state — language and UI state.",
+      "i3": "Next.js technical: __next_hmr_refresh_hash__ — development/technical.",
+      "i4": "Analytics: _ga, _ga_* — Google Analytics (anonymized traffic stats).",
+      "i5": "Payment providers may set their own cookies on their domains during checkout.",
+      "note": "The exact set depends on your actions, settings, and integrations in use."
+    },
+    "consent": {
+      "title": "Consent",
+      "i1": "On your first visit we show a consent banner: “Accept / Decline / Customize”.",
+      "i2": "Strictly necessary cookies are always set because the site depends on them.",
+      "i3": "Analytics and marketing cookies are enabled only with your consent.",
+      "note": "You can change your choice anytime in your browser settings or by reopening the banner (if available)."
+    },
+    "manage": {
+      "title": "Managing cookies",
+      "body": "You can delete cookies and block them in your browser settings. Note: blocking strictly necessary cookies may break the site."
+    },
+    "thirdparty": {
+      "title": "Third-party cookies & providers",
+      "body": "We use Google Analytics for stats. Cookies may also be set by payment providers during checkout and by embedded platforms (e.g., TikTok, YouTube)."
+    },
+    "retention": {
+      "title": "Retention",
+      "body": "Cookie lifetime depends on type and your browser. Session cookies expire when you close the browser; persistent cookies typically last from 1 day up to 24 months."
+    },
+    "updates": "We may update this Policy. The current version is always available on the website.",
+    "contact": "Cookie questions: support@frog-energy.com"
   }
 }

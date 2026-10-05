@@ -8,5 +8,612 @@
   },
   "cta": {
     "welcome": "Bienvenue"
+  },
+  "contact": {
+    "getInTouch": "Contactez-nous",
+    "description": "Vous avez une question, une idée de collaboration ou un commentaire ? Envoyez-nous un courriel ou un message sur Telegram."
+  },
+  "homePage": "Page d'accueil",
+  "comingSoon": "Bientôt disponible...",
+  "nextBroadcast": "Prochaine émission :",
+  "prevBroadcast": "Émission précédente :",
+  "weekTopic": "Thème et défi de la semaine (à retrouver sur le canal et le groupe Telegram) :",
+  "showMore": "Voir plus",
+  "shown": "Affichés",
+  "of": "sur",
+  "home": {
+    "header": {
+      "welcome": "Bienvenue",
+      "welcomeAnon": "Bienvenue !",
+      "energy": "Votre énergie"
+    },
+    "popular": {
+      "title": "Cellules populaires",
+      "empty": "Pas encore de cellules populaires."
+    },
+    "hero": {
+      "title": "La Grenouille Énergétique : un symbole de chance, d'abondance et de prospérité",
+      "desc": "Envoyez un message ou une pratique ascétique (tapasya) à la Grenouille — elle vous aidera et dirigera l'énergie.",
+      "start": "Commencez votre voyage",
+      "read": "En savoir plus sur la Grenouille"
+    },
+    "symbolism": {
+      "title": "Le Symbolisme de la Grenouille"
+    },
+    "features": {
+      "money": {
+        "title": "Richesse",
+        "description": "Dans les traditions chinoises et slaves, la grenouille est un symbole de longévité, de richesse et de fertilité."
+      },
+      "love": {
+        "title": "Amour",
+        "description": "Dans la Grèce Antique, la grenouille était considérée comme un symbole d'harmonie dans les relations. Elle était associée à Aphrodite, la déesse de l'amour et de la fertilité."
+      },
+      "luck": {
+        "title": "Chance",
+        "description": "Pour les Aztèques et les Mayas, la grenouille était associée à la pluie et à une récolte réussie."
+      },
+      "soul": {
+        "title": "Spiritualité",
+        "description": "Dans l'Égypte Ancienne, la grenouille incarnait la déesse de la vie et de la renaissance."
+      },
+      "dream": {
+        "title": "Rêves",
+        "description": "Dans l'alchimie ancienne, la grenouille symbolisait la connaissance secrète et l'accomplissement des désirs."
+      }
+    },
+    "desc": {
+      "1": "Chaque jour, nous effectuons un rituel avec un instrument de grenouille guiro en bois.",
+      "2": "Le coassement transporte les mots et les souhaits publiés sur le site.",
+      "3": "Achetez une cellule.",
+      "4": "Laissez votre texte.",
+      "5": "Cela devient une partie de l'acte magique.",
+      "6": "Regardez les flux en direct pour voir votre message prendre vie !",
+      "7": "Transformez vos mots en magie. Faites partie du rituel.",
+      "title": "Comment ça marche"
+    }
+  },
+  "info": {
+    "announcements": {
+      "title": "Diffusions et Annonces",
+      "empty": "Aucune annonce pour le moment."
+    },
+    "energy": {
+      "title": "Qu'est-ce que l'Énergie ?",
+      "body": "L'énergie est la monnaie interne de la plateforme. Vous la gagnez en accomplissant des tâches, en participant à des activités et en contribuant à la communauté. Plus vous êtes actif, plus vous pouvez échanger d'énergie contre des récompenses et des produits.",
+      "cta": "Aller aux tâches et au programme de parrainage"
+    },
+    "shop": {
+      "title": "Boutique en ligne",
+      "body": "Dans la boutique, vous pouvez échanger votre énergie contre des produits et des bonus. Augmentez votre solde en restant actif sur la plateforme.",
+      "cta": "Ouvrir la boutique"
+    },
+    "community": {
+      "title": "Rejoignez la communauté",
+      "telegram": "Communauté Telegram",
+      "discord": "Serveur Discord"
+    },
+    "settings": {
+      "title": "Paramètres du compte",
+      "profile": "Profil",
+      "openLink": "Ouvrir la page des paramètres"
+    },
+    "howto": {
+      "title": "Comment commencer",
+      "body": "Créez votre profil, choisissez des tâches intéressantes et rejoignez la communauté. Suivez vos progrès et échangez votre énergie contre des récompenses."
+    },
+    "ref": {
+      "title": "Programme de parrainage",
+      "body": "Invitez vos amis et gagnez de l'énergie supplémentaire grâce à leur activité.",
+      "cta": "Ouvrir la page de parrainage"
+    }
+  },
+  "buyAgain": "Acheter à nouveau",
+  "like": "J’aime",
+  "unlike": "Je n’aime plus",
+  "auth": {
+    "likeNeedsLogin": "Connectez-vous ou inscrivez-vous pour aimer les publications.",
+    "continueToBuy": "Continuez pour finaliser l'achat",
+    "choose": "Se connecter ou s’inscrire",
+    "required": "Veuillez vous connecter."
+  },
+  "buyForm": {
+    "noUserId": "Veuillez vous connecter ou vous inscrire pour poursuivre l’achat.",
+    "pickRandomNumber": "Choisir un numéro aléatoire",
+    "unknownError": "Erreur inconnue. Veuillez réessayer.",
+    "noSelected": "Aucune cellule sélectionnée dans le formulaire.",
+    "daysChoose": "Choisissez combien de jours afficher votre message sur ce tableau",
+    "pickNumber": "Choisir un numéro préféré",
+    "preferredNumber": "Numéro préféré",
+    "numberTaken": "Ce numéro est déjà pris, veuillez en choisir un autre",
+    "money": "Argent",
+    "love": "Amour",
+    "quantityMoney": "Quantité (argent)",
+    "quantityLove": "Quantité (amour)",
+    "quantityHint": "Vous pouvez acheter jusqu'à 10 cellules à la fois.",
+    "textN": "Texte",
+    "textPlaceholder": "Souhait / intention",
+    "limit": "Longueur max : 160",
+    "daysSumm": "jours",
+    "sum": "Total",
+    "submit": {
+      "label": "Acheter des cellules",
+      "first": "Sélectionner des cellules",
+      "second": "Réserver des cellules"
+    },
+    "pricingHintShort": "Chaque cellule coûte 1 $ par jour. Choisissez le nombre de jours — nous calculerons le total automatiquement.",
+    "termsPrefix": "J'accepte les",
+    "termsLink": "Conditions d'utilisation",
+    "termsRequired": "Veuillez accepter les Conditions d'utilisation pour continuer.",
+    "back": "Retourner",
+    "quantityLuck": "Quantité (chance)",
+    "quantitySoul": "Quantité (âme)",
+    "quantityDream": "Quantité (rêves)",
+    "errors": {
+      "number": "Entrez un nombre.",
+      "int": "Nombre entier requis.",
+      "min": "Minimum 1.",
+      "max": "Maximum 10 000.",
+      "maxday": "Maximum 365.",
+      "pickOne": "Sélectionnez au moins un type (Argent ou Amour).",
+      "textsCountMismatch": "Le nombre de textes doit être égal à",
+      "mustBeZero": "Doit être 0 si le type n'est pas sélectionné.",
+      "mustBeEmpty": "Doit être vide si le type n'est pas sélectionné."
+    },
+    "pickAny": "Sélectionnez au moins un type de cellules",
+    "left": "Restant",
+    "days": "Jours"
+  },
+  "hide": "Masquer",
+  "show": "Afficher",
+  "password": {
+    "needUpper": "Le mot de passe doit contenir au moins une lettre majuscule",
+    "needLower": "Le mot de passe doit contenir au moins une lettre minuscule",
+    "needDigit": "Le mot de passe doit contenir au moins un chiffre",
+    "label": "Mot de passe"
+  },
+  "notfound": {
+    "title": "Page introuvable",
+    "lead": "Il semble que vous ayez ouvert une page qui n'existe pas. Revenons en arrière.",
+    "actions": {
+      "back": "Retourner",
+      "home": "Accueil",
+      "slots": "Tableaux"
+    },
+    "hint": "Si vous pensez qu'il s'agit d'une erreur, essayez d'actualiser ou revenez un peu plus tard."
+  },
+  "paymentReturn": {
+    "manualCheck": "Si cela prend du temps, vérifiez manuellement",
+    "title": "Statut du paiement",
+    "waitTitle": "Paiement en cours de traitement",
+    "successTitle": "Paiement réussi",
+    "failTitle": "Paiement non effectué",
+    "subtitle": "Si la page n'est pas mise à jour automatiquement, cela peut prendre encore quelques secondes.",
+    "waitLead": "Nous vérifions le statut de votre paiement…",
+    "successLead": "Paiement confirmé. Merci !",
+    "failLead": "Le paiement n'a pas été confirmé ou a été annulé.",
+    "checking": "Vérification…",
+    "goBoards": "Aller aux tableaux",
+    "tryAgain": "Essayer à nouveau",
+    "refresh": "Actualiser",
+    "noOrder": "L'identifiant de la commande est manquant.",
+    "notFound": "Commande introuvable.",
+    "fetchError": "Échec de la récupération du statut du paiement."
+  },
+  "holds": {
+    "title": "Cellules Réservées",
+    "empty": {
+      "title": "Rien pour l'instant"
+    }
+  },
+  "firstName": {
+    "help": "Ce nom sera visible par tous à côté de votre message. Vous pouvez utiliser un pseudonyme.",
+    "label": "Prénom"
+  },
+  "company": {
+    "location": "Nous sommes basés en Ukraine."
+  },
+  "footer": {
+    "tagline": "Concevoir des rituels numériques qui inspirent.",
+    "rights": "Tous droits réservés.",
+    "sections": {
+      "boards": {
+        "title": "Tableaux"
+      },
+      "company": {
+        "title": "Entreprise"
+      },
+      "social": {
+        "title": "Réseaux sociaux"
+      },
+      "legal": {
+        "title": "Légal"
+      }
+    },
+    "links": {
+      "board_money": "Tableau de la Prospérité Financière",
+      "board_love": "Tableau de l'Énergie Amoureuse",
+      "board_luck": "Tableau de la Chance",
+      "board_soul": "Tableau de l'Âme",
+      "board_dream": "Tableau des Rêves",
+      "about": "À propos de nous",
+      "news": "Actualités",
+      "contact": "Contact",
+      "tiktok": "TikTok",
+      "instagram": "Instagram",
+      "telegram": "Telegram",
+      "email": "E-mail",
+      "terms": "Conditions",
+      "privacy": "Confidentialité",
+      "cookies": "Cookies"
+    }
+  },
+  "manualError": "Erreur",
+  "signupFailed": "Cet utilisateur n'existe pas",
+  "faq": {
+    "title": "Foire aux Questions",
+    "subtitle": "Bref aperçu du tableau, des messages et des paiements.",
+    "q1": "Qu'est-ce que le Tableau de la Grenouille ?",
+    "a1": "C'est un tableau en ligne dont les cellules sont chargées pour réaliser des intentions spécifiques. Vous laissez un court message, choisissez le nombre de jours à l'afficher, et nous jouons de la grenouille tous les jours pour énergiser votre intention.",
+    "q2": "Comment acheter une cellule ?",
+    "a2": "Cliquez sur « Commencer le Voyage », inscrivez-vous si nécessaire, choisissez une cellule et le nombre de jours. Puis payez — et votre message apparaîtra sur le tableau.",
+    "q3": "Combien de jours le message est-il affiché ?",
+    "a3": "Autant de jours que vous choisissez lors de l'achat. Le tarif est de 1 cellule par 1 jour = 1 $.",
+    "q4": "Puis-je modifier ou supprimer mon message après l'avoir publié ?",
+    "a4": "Avant de réserver la cellule — oui. Après la réservation, le texte devient fixe. Si vous avez besoin de modifier, créez un nouveau message.",
+    "q5": "Y a-t-il une modération ?",
+    "a5": "Oui. Les insultes, les discours de haine, le contenu pour adultes et les données personnelles de tiers sont interdits. Nous pouvons masquer les messages qui enfreignent les règles. Consultez les Conditions d'utilisation pour les détails.",
+    "q6": "Où puis-je voir mon message en direct ?",
+    "a6": "Nous organisons des diffusions en direct et annonçons le calendrier à l'avance sur les réseaux sociaux.",
+    "q7": "Quels modes de paiement sont acceptés ?",
+    "a7": "Apple Pay, Google Pay ou carte de crédit. Les paiements sont traités officiellement.",
+    "q8": "Mon message est-il visible par tout le monde ?",
+    "a8": "Oui, c'est une section publique du tableau. Ne publiez pas d'informations personnelles ou confidentielles. Consultez la Politique de confidentialité pour plus de détails."
+  },
+  "sidebar": {
+    "watch": "Regarder",
+    "moneyTitle": "Tableau de la Prospérité Financière",
+    "loveTitle": "Tableau de l'Énergie Amoureuse",
+    "slots": "Mes cellules",
+    "soulTitle": "Tableau de l'Âme",
+    "settings": "Paramètres",
+    "logout": "Se déconnecter",
+    "dreamTitle": "Tableau des Rêves",
+    "luckTitle": "Tableau de la Chance"
+  },
+  "ritual": {
+    "title": "Comment ça marche",
+    "steps": {
+      "1": {
+        "title": "Sélectionnez une ou plusieurs cellules",
+        "desc": "Selon les tableaux sur lesquels vous souhaitez placer les cellules."
+      },
+      "2": {
+        "title": "Saisissez un message (facultatif) et les jours de publication",
+        "desc": "1 cellule = 1 $ par jour. 1 cellule pour 3 jours = 3 $"
+      },
+      "3": {
+        "title": "Réservez et payez",
+        "desc": "Réservez les cellules, choisissez un mode de paiement et payez (la réservation dure 10 minutes)."
+      },
+      "4": {
+        "title": "Profitez du résultat",
+        "desc": "Profitez de votre message ou de votre pratique ascétique et recevez le retour énergétique de la Grenouille (la 'performance' de la Grenouille est visible sur les plateformes de streaming)."
+      }
+    }
+  },
+  "error": "Erreur",
+  "dashboard": {
+    "noresult": "Aucun résultat trouvé",
+    "luck": "Tableau de la Chance",
+    "dream": "Tableau des Rêves",
+    "search": "Rechercher par numéro ou contenu",
+    "prosperityBoard": "Tableau de la Prospérité",
+    "unauthorizedUser": "Utilisateur non autorisé",
+    "description": "Un espace simple mais puissant pour se concentrer sur le bien-être et la croissance personnelle.",
+    "love": "Tableau de l'Énergie Amoureuse",
+    "legend": {
+      "empty": "Vide",
+      "taken": "Pris",
+      "mine": "Mes cellules"
+    },
+    "cell": "Cellule",
+    "expired": "Cellules expirées"
+  },
+  "updateFailed": "Échec de la mise à jour",
+  "changePasswordFailed": "Échec du changement de mot de passe",
+  "amount": "Montant",
+  "dialog": {
+    "open": "Ouvrir la boîte de dialogue",
+    "newCell": {
+      "title": "Acheter des Cellules",
+      "descMulti": "Choisissez le nombre de cellules et ajoutez éventuellement du texte pour chacune.",
+      "quantity": "Quantité",
+      "quantityHint": "Vous ne pouvez pas acheter plus de 10 cellules à la fois.",
+      "notes": "Textes pour les cellules (facultatif)",
+      "noteN": "Texte",
+      "notePh": "Souhait / intention (facultatif)",
+      "limit": "Longueur max",
+      "left": "Restant",
+      "submitMulti": "Acheter des cellules"
+    }
+  },
+  "common": {
+    "cancel": "Annuler",
+    "loading": "Chargement...",
+    "back": "Retourner",
+    "error": "Une erreur s'est produite"
+  },
+  "luck": {
+    "title": "Chance"
+  },
+  "soul": {
+    "title": "Âme"
+  },
+  "dream": {
+    "title": "Rêves"
+  },
+  "slots": {
+    "successTitle": "Achat réussi !",
+    "successSubtitle": "Vos numéros de cellule :",
+    "money": "Argent",
+    "love": "Amour",
+    "label": "Cellules d'énergie"
+  },
+  "sort": {
+    "random": "Aléatoire"
+  },
+  "until": "jusqu'à",
+  "forgotPass": "Mot de passe oublié ?",
+  "forgotPassDescription": "Récupérez votre mot de passe par courriel",
+  "emailNotFound": "Aucun compte avec cet e-mail",
+  "login": "Se connecter",
+  "profile": "Profil",
+  "logout": "Se déconnecter",
+  "lastName": "Nom de famille",
+  "email": "E-mail",
+  "register": "S'inscrire",
+  "required": "Champ requis",
+  "minFirstName": "Le prénom doit contenir au moins 2 caractères",
+  "invalidEmail": "E-mail invalide",
+  "shortPassword": "Le mot de passe est trop court",
+  "longPassword": "Le mot de passe est trop long",
+  "emailExists": "Un utilisateur avec cet e-mail existe déjà",
+  "success": "Vous vous êtes inscrit avec succès !",
+  "loginFormDescription": "Connectez-vous et commencez votre voyage énergétique aujourd'hui.",
+  "registerFormDescription": "Complétez une inscription rapide et commencez votre voyage énergétique aujourd'hui.",
+  "incorrectCredentials": "E-mail ou mot de passe incorrect",
+  "back": "Retour",
+  "enterCode": "Entrez le code reçu par courriel",
+  "sendCode": "Envoyer le code",
+  "passwordChangedSuccess": "Votre mot de passe a été changé avec succès",
+  "invalidCode": "Code invalide",
+  "rateLimited": "Trop de tentatives. Veuillez réessayer plus tard.",
+  "emailSendFailed": "Échec de l'envoi de l'e-mail. Veuillez réessayer plus tard.",
+  "savePassword": "Enregistrer le mot de passe",
+  "dashboardGreeting": "Bonjour",
+  "settingsTitle": "Paramètres",
+  "basicSettingsTitle": "Paramètres de base",
+  "language": "Langue",
+  "timezone": "Fuseau horaire",
+  "saveChanges": "Enregistrer les modifications",
+  "changePasswordTitle": "Changer le mot de passe",
+  "currentPassword": "Mot de passe actuel",
+  "newPassword": "Nouveau mot de passe",
+  "confirmPassword": "Confirmer le mot de passe",
+  "saveNewPassword": "Enregistrer le nouveau mot de passe",
+  "passwordChangeSuccess": "Mot de passe changé avec succès !",
+  "basicSettings": "Paramètres de base",
+  "save": "Enregistrer",
+  "updatePassword": "Mettre à jour le mot de passe",
+  "passwordMismatch": "Les mots de passe ne correspondent pas",
+  "basicSettingsUpdated": "Paramètres enregistrés avec succès.",
+  "passwordUpdated": "Mot de passe mis à jour avec succès.",
+  "Cancel": "Fermer",
+  "Save changes": "Enregistrer les modifications",
+  "ended": "terminé",
+  "inprocess": "en cours",
+  "nolimit": "aucune limite",
+  "days": "j",
+  "hours": "h",
+  "minutes": "m",
+  "seconds": "s",
+  "slotsBuyTitle": "Acheter des cellules",
+  "slotsBuyDescription": "Choisissez argent, amour, ou les deux",
+  "empty": {
+    "subtitle": "Achetez vos cellules d'énergie et commencez aujourd'hui."
+  },
+  "terms": {
+    "title": "Conditions d'utilisation — Frog Energy",
+    "intro": "En utilisant le site web et en effectuant un achat, vous confirmez que vous avez 18 ans et plus et que vous acceptez ces Conditions.",
+    "operator": {
+      "title": "Opérateur du Service",
+      "body": "Entrepreneur Individuel Iryna Filonova, TIN 3489000409, Tcherkassy, Ukraine. E-mail: support@frog-energy.com. Site web : frog-energy.com. La langue officielle du document est l'ukrainien."
+    },
+    "age": {
+      "title": "Âge et Compte",
+      "body": "Les achats sont disponibles uniquement pour les utilisateurs âgés de 18 ans et plus. Vous êtes responsable de l'exactitude des données et de la sécurité du compte."
+    },
+    "public": {
+      "title": "Messages Publics et Licence",
+      "body": "Les messages et les noms publics apparaissent sur le site web et peuvent être montrés/lus lors de diffusions et sur les réseaux sociaux. En publiant un message, vous accordez une licence non exclusive, libre de droits et mondiale pour le reproduire, le communiquer publiquement, l'afficher et l'adapter dans le cadre du service et de sa promotion."
+    },
+    "content": {
+      "title": "Règles de Contenu (Interdit)",
+      "i1": "Contenu sexuel, nudité, exploitation d'enfants, violence ou menaces.",
+      "i2": "Discours de haine, discrimination, extrémisme/terrorisme.",
+      "i3": "Données personnelles de tiers, détails de paiement, doxxing.",
+      "i4": "Fraude, spam, appels à nuire ou activité illégale.",
+      "i5": "Violation des droits d'auteur ou des droits à l'image.",
+      "note": "Nous pouvons modérer, masquer ou supprimer de tels éléments et bloquer des comptes sans remboursement."
+    },
+    "booking": {
+      "title": "Cellules, Réservation, Délai",
+      "i1": "Vous pouvez sélectionner une ou plusieurs cellules (y compris un numéro spécifique si disponible).",
+      "i2": "La réservation dure 10 minutes ; sans paiement, les cellules retournent au pool.",
+      "i3": "La publication commence après confirmation du paiement et dure le nombre de jours sélectionné."
+    },
+    "pricing": {
+      "title": "Tarification et Paiement",
+      "i1": "Base : 1 cellule = 1 jour. Le prix/la devise réels sont affichés au moment du paiement.",
+      "i2": "Les prix peuvent changer à l'avenir, mais les emplacements déjà payés ne sont pas affectés.",
+      "i3": "Les paiements sont traités via Plata by mono."
+    },
+    "streams": {
+      "title": "Diffusions en direct",
+      "body": "Nous jouons de la grenouille musicale quotidiennement et pouvons occasionnellement lire des messages lors de diffusions en direct ou d'enregistrements (TikTok, YouTube, etc.). Les cellules peuvent être achetées uniquement sur le site web ; l'envoi de messages à partir des diffusions n'est pas pris en charge."
+    },
+    "refunds": {
+      "title": "Remboursements",
+      "i1": "Les remboursements ne sont généralement pas fournis.",
+      "i2": "Exception : une erreur technique de notre part lorsque le message n'a pas été publié pendant la période payée.",
+      "i3": "Les remboursements sont émis via le mode de paiement original ; le traitement peut prendre jusqu'à 14 jours."
+    },
+    "disclaimer": {
+      "title": "Avertissement et Responsabilité",
+      "body": "Le service est fourni « tel quel » à des fins de divertissement et ne garantit pas la réalisation des souhaits. Notre responsabilité maximale est limitée au montant de votre dernière commande payée."
+    },
+    "ip": {
+      "title": "Propriété Intellectuelle",
+      "body": "La marque, le design, le contenu et le code appartiennent à l'Opérateur ou sont utilisés légalement. La copie sans permission est interdite."
+    },
+    "complaints": {
+      "title": "Plaintes et Contact",
+      "body": "Contact : support@frog-energy.com. Décrivez le problème et incluez des liens/preuves."
+    },
+    "law": {
+      "title": "Droit Applicable et Juridiction",
+      "body": "Le droit ukrainien s'applique. Les litiges sont réglés par les tribunaux ukrainiens au lieu de l'Opérateur."
+    },
+    "changes": "La version actuelle est publiée sur le site web ; les changements importants seront annoncés sur le site et/ou par courriel."
+  },
+  "privacy": {
+    "title": "Politique de Confidentialité de Frog Energy",
+    "intro": "Cette Politique explique quelles données nous collectons, comment nous les utilisons, avec qui nous les partageons, et quels sont vos droits. En utilisant le site et en effectuant un paiement, vous acceptez cette Politique.",
+    "controller": {
+      "title": "Contrôleur et Contact",
+      "body": "FOP Filonova Iryna Andriivna (FOP Filonova I. A.), TIN 3489000409, Tcherkassy, Ukraine. E-mail: support@frog-energy.com. Site web : frog-energy.com. La version officielle des documents est en ukrainien."
+    },
+    "scope": {
+      "title": "Portée",
+      "body": "Le site web et les services Frog Energy : achat de cellules, publication de messages, et affichage/lecture de ceux-ci lors de diffusions en direct et d'enregistrements (TikTok, YouTube, etc.). Les messages ne peuvent être soumis que sur le site web."
+    },
+    "data": {
+      "title": "Données que nous collectons",
+      "i1": "Données du compte : nom/pseudonyme, langue/locale, paramètres du compte.",
+      "i2": "Contenu public : vos messages et noms publics affichés sur le site et dans les diffusions.",
+      "i3": "Paiements : fait et statut du paiement via le fournisseur (nous ne stockons pas les détails de la carte).",
+      "i4": "Données techniques et cookies : IP, type d'appareil/navigateur, journaux d'événements, analyses (Google Analytics).",
+      "i5": "Communications : e-mail (confirmations, reçus, support).",
+      "note": "En soumettant du contenu public, vous comprenez qu'il peut apparaître sur notre site et sur des plateformes externes."
+    },
+    "purpose": {
+      "title": "Comment nous utilisons les données",
+      "i1": "Fourniture du service : compte, placement de cellule et de message.",
+      "i2": "Paiements et comptabilité : traitement des transactions, reçus, obligations fiscales.",
+      "i3": "Modération et sécurité : conformité à la politique, prévention de la fraude/abus.",
+      "i4": "Communications : e-mails système, réponses du support.",
+      "i5": "Analyses et améliorations : statistiques d'utilisation (Google Analytics).",
+      "i6": "Promotion et affichage public : affichage/lecture de messages dans les diffusions et les réseaux sociaux.",
+      "i7": "Conformité légale : réponse aux demandes légales.",
+      "bases": "Bases légales : contrat (fourniture de service), intérêts légitimes (sécurité, analyses), consentement (cookies/marketing), obligation légale (comptabilité)."
+    },
+    "cookies": {
+      "title": "Cookies et analyses",
+      "i1": "Cookies de session pour la fonctionnalité du site et la connexion.",
+      "i2": "Jetons d'authentification (par exemple, auth/session).",
+      "i3": "Préférences (langue/locale, état de l'interface utilisateur).",
+      "i4": "Cookies d'analyse (Google Analytics) pour comprendre l'utilisation.",
+      "i5": "Bannière de consentement : « Accepter / Refuser / Personnaliser ». Vous pouvez également gérer les cookies dans votre navigateur.",
+      "note": "La rétention dépend du type de cookie et des paramètres de votre navigateur/fournisseur."
+    },
+    "sharing": {
+      "title": "Partage",
+      "i1": "Hébergement (HOSTiQ.ua) — hébergement/traitement du site.",
+      "i2": "Paiements (Plata by mono) — traitement des paiements ; les données de carte ne sont pas partagées avec nous.",
+      "i3": "Analyses (Google Analytics) — statistiques de visite.",
+      "i4": "Plateformes publiques (TikTok, YouTube, etc.) — affichage/lecture de votre contenu public.",
+      "i5": "Autorités — uniquement si la loi l'exige."
+    },
+    "transfers": {
+      "title": "Transferts internationaux",
+      "body": "Certains fournisseurs (par exemple, Google) peuvent traiter des données en dehors de l'Ukraine/UE. Nous nous appuyons sur leurs garanties contractuelles standard et appliquons des mesures de sécurité raisonnables."
+    },
+    "retention": {
+      "title": "Rétention",
+      "i1": "Données du compte — tant que le compte est actif et pendant un délai raisonnable après la suppression (sauvegardes/obligations légales).",
+      "i2": "Messages publics — dans le cadre du service et des archives publiques.",
+      "i3": "Dossiers de paiement — conformément à la loi applicable (comptabilité/impôts).",
+      "i4": "Cookies/analyses — conformément à votre navigateur et aux politiques des fournisseurs."
+    },
+    "rights": {
+      "title": "Vos droits",
+      "i1": "Accéder à vos données et obtenir une copie.",
+      "i2": "Rectifier les données inexactes ou incomplètes.",
+      "i3": "Effacer les données dans les cas prévus par la loi.",
+      "i4": "Restreindre le traitement et s'opposer au traitement.",
+      "i5": "Portabilité des données (le cas échéant).",
+      "i6": "Retirer le consentement (pour le traitement basé sur le consentement).",
+      "note": "Pour exercer vos droits, envoyez-nous un courriel — nous vous répondrons dans un délai raisonnable."
+    },
+    "children": {
+      "title": "Mineurs",
+      "body": "Le service n'est pas destiné aux personnes de moins de 18 ans. Si nous apprenons qu'un compte appartient à un mineur, nous supprimerons les données."
+    },
+    "security": {
+      "title": "Sécurité",
+      "body": "Nous appliquons des mesures techniques et organisationnelles, mais aucun service en ligne ne peut garantir une sécurité absolue."
+    },
+    "contact": {
+      "title": "Contact",
+      "body": "Questions concernant vos données : support@frog-energy.com. Veuillez inclure un objet clair et des détails."
+    },
+    "changes": "Nous pouvons mettre à jour cette Politique. La version actuelle est sur le site web ; les changements importants seront annoncés sur le site et/ou par courriel."
+  },
+  "cookies": {
+    "title": "Politique de Cookies de Frog Energy",
+    "intro": "Cette page explique quels cookies nous utilisons, pourquoi nous les utilisons et comment vous pouvez gérer vos choix.",
+    "what": {
+      "title": "Ce que sont les cookies",
+      "body": "Les cookies sont de petits fichiers stockés dans votre navigateur. Ils aident le site à fonctionner, se souviennent de vos préférences et collectent des analyses anonymisées."
+    },
+    "types": {
+      "title": "Types de cookies que nous utilisons",
+      "i1": "Strictement nécessaires — fonctionnalité de base (connexion, sessions). Sans eux, le site ne fonctionnera pas.",
+      "i2": "Fonctionnels — se souviennent de vos préférences (langue, état de l'interface utilisateur).",
+      "i3": "Analytiques — nous aident à comprendre l'utilisation (Google Analytics). Nous ne voyons que des rapports agrégés.",
+      "i4": "Marketing/tiers — peuvent être définis par des plateformes intégrées (par exemple, lecteurs ou widgets)."
+    },
+    "list": {
+      "title": "Exemples que nous pouvons utiliser",
+      "body": "Les noms peuvent varier selon la version du site et les fournisseurs :",
+      "i1": "Service : session, auth/session-token — authentification et fonctionnalité du compte.",
+      "i2": "Préférences : Next-Locale, sidebar_state — langue et état de l'interface utilisateur.",
+      "i3": "Technique Next.js : __next_hmr_refresh_hash__ — développement/technique.",
+      "i4": "Analytiques : _ga, _ga_* — Google Analytics (statistiques de trafic anonymisées).",
+      "i5": "Les fournisseurs de paiement peuvent définir leurs propres cookies sur leurs domaines lors du paiement.",
+      "note": "L'ensemble exact dépend de vos actions, de vos paramètres et des intégrations utilisées."
+    },
+    "consent": {
+      "title": "Consentement",
+      "i1": "Lors de votre première visite, nous affichons une bannière de consentement : « Accepter / Refuser / Personnaliser ».",
+      "i2": "Les cookies strictement nécessaires sont toujours définis car le site en dépend.",
+      "i3": "Les cookies d'analyse et de marketing ne sont activés qu'avec votre consentement.",
+      "note": "Vous pouvez modifier votre choix à tout moment dans les paramètres de votre navigateur ou en rouvrant la bannière (si disponible)."
+    },
+    "manage": {
+      "title": "Gestion des cookies",
+      "body": "Vous pouvez supprimer les cookies et les bloquer dans les paramètres de votre navigateur. Remarque : le blocage des cookies strictement nécessaires peut rendre le site inutilisable."
+    },
+    "thirdparty": {
+      "title": "Cookies tiers et fournisseurs",
+      "body": "Nous utilisons Google Analytics pour les statistiques. Des cookies peuvent également être définis par les fournisseurs de paiement lors du paiement et par des plateformes intégrées (par exemple, TikTok, YouTube)."
+    },
+    "retention": {
+      "title": "Rétention",
+      "body": "La durée de vie des cookies dépend du type et de votre navigateur. Les cookies de session expirent lorsque vous fermez le navigateur ; les cookies persistants durent généralement de 1 jour à 24 mois."
+    },
+    "updates": "Nous pouvons mettre à jour cette Politique. La version actuelle est toujours disponible sur le site web.",
+    "contact": "Questions sur les cookies : support@frog-energy.com"
   }
 }
