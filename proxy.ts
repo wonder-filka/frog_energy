@@ -9,7 +9,6 @@ import Negotiator from "negotiator";
 let locales = ["ru", "en", "es", "pt", "de", "ua", "fr"];
  
 function getLocale(request: NextRequest): string | undefined {
-  // Negotiator expects plain object so we need to transform headers
   const negotiatorHeaders: Record<string, string> = {};
   request.headers.forEach((value, key) => (negotiatorHeaders[key] = value));
 
@@ -26,19 +25,15 @@ function getLocale(request: NextRequest): string | undefined {
 }
 
 export function proxy(request: NextRequest) {
-  // Check if there is any supported locale in the pathname
   const pathname = request.nextUrl.pathname;
  const pathnameIsMissingLocale = i18n.locales.every(
     (locale) =>
       !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`,
   );
 
-  // Redirect if there is no locale
   if (pathnameIsMissingLocale) {
     const locale = getLocale(request);
 
-    // e.g. incoming request is /products
-    // The new URL is now /en-US/products
     return NextResponse.redirect(
       new URL(
         `/${locale}${pathname.startsWith("/") ? "" : "/"}${pathname}`,
@@ -50,9 +45,6 @@ export function proxy(request: NextRequest) {
  
 export const config = {
   matcher: [
-    // Skip internal paths (_next) and static files from /public (anything with an extension)
     '/((?!_next|.*\\..*).*)',
-    // Optional: only run on root (/) URL
-    // '/'
   ],
 }

@@ -10,7 +10,7 @@ import {
   MoonStar
 } from 'lucide-react'
 
-type Variant = 'money' | 'love' | 'luck' | 'soul' | 'dream'
+import type { Variant } from '@/lib/types'
 
 type Feature = {
   key: Variant
