@@ -400,6 +400,7 @@
   "saveChanges": "Enregistrer les modifications",
   "changePasswordTitle": "Changer le mot de passe",
   "currentPassword": "Mot de passe actuel",
+  "currentPasswordIncorrect": "Le mot de passe actuel est incorrect",
   "newPassword": "Nouveau mot de passe",
   "confirmPassword": "Confirmer le mot de passe",
   "saveNewPassword": "Enregistrer le nouveau mot de passe",

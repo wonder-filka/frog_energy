@@ -398,6 +398,7 @@
   "saveChanges": "Сохранить изменения",
   "changePasswordTitle": "Смена пароля",
   "currentPassword": "Текущий пароль",
+  "currentPasswordIncorrect": "Текущий пароль введён неверно",
   "newPassword": "Новый пароль",
   "confirmPassword": "Подтвердите пароль",
   "saveNewPassword": "Сохранить новый пароль",

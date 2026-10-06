@@ -400,6 +400,7 @@
   "saveChanges": "Save changes",
   "changePasswordTitle": "Change password",
   "currentPassword": "Current password",
+  "currentPasswordIncorrect": "Current password is incorrect",
   "newPassword": "New password",
   "confirmPassword": "Confirm password",
   "saveNewPassword": "Save new password",

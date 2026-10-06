@@ -398,6 +398,7 @@
   "saveChanges": "Änderungen speichern",
   "changePasswordTitle": "Passwort ändern",
   "currentPassword": "Aktuelles Passwort",
+  "currentPasswordIncorrect": "Das aktuelle Passwort ist falsch",
   "newPassword": "Neues Passwort",
   "confirmPassword": "Passwort bestätigen",
   "saveNewPassword": "Neues Passwort speichern",

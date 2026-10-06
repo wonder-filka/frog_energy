@@ -103,3 +103,18 @@ export const SlotItemsSchema = z
 	.refine((items) => new Set(items.map((i) => i.variant)).size === items.length, {
 		error: "duplicateVariant",
 	});
+
+// Settings page: the same schemas validate the forms and the Server Actions
+export const SettingsNameSchema = z.object({
+	firstName: z.string().min(2, { error: "minFirstName" }),
+});
+
+export const SettingsEmailSchema = z.object({
+	email: z.email({ error: "invalidEmail" }),
+});
+
+// New password follows the reset-password rules (temp allowed 6+ here)
+export const ChangePasswordSchema = z.object({
+	currentPassword: z.string().min(1, { error: "shortPassword" }),
+	newPassword: z.string().min(8, { error: "shortPassword" }).max(128, { error: "longPassword" }),
+});
