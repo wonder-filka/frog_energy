@@ -5,20 +5,26 @@ import { JWTPayload, SignJWT, jwtVerify } from "jose";
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 
-const secretKey = process.env.SESSION_SECRET;
-const encodedKey = new TextEncoder().encode(secretKey);
+// Read on each call so an updated .env is picked up without restarting the dev server
+function getEncodedKey() {
+	const secretKey = process.env.SESSION_SECRET;
+	if (!secretKey) {
+		throw new Error("SESSION_SECRET is not set (add it to .env)");
+	}
+	return new TextEncoder().encode(secretKey);
+}
 
 export async function encrypt(payload: JWTPayload) {
 	return new SignJWT(payload)
 		.setProtectedHeader({ alg: "HS256" })
 		.setIssuedAt()
 		.setExpirationTime("7d")
-		.sign(encodedKey);
+		.sign(getEncodedKey());
 }
 
 export async function decrypt(session: string | undefined = "") {
 	try {
-		const { payload } = await jwtVerify(session, encodedKey, {
+		const { payload } = await jwtVerify(session, getEncodedKey(), {
 			algorithms: ["HS256"],
 		});
 		return payload;
