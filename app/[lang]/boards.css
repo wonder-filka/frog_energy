@@ -1,0 +1,313 @@
+.amb-glow {
+	position: relative;
+	border-radius: 0.375rem; /* = rounded-md, подстрой если нужно */
+	background: rgba(0, 0, 0, 0.35); /* легкая подложка, опционально */
+}
+
+.amb-glow::before,
+.amb-glow::after {
+	content: "";
+	position: absolute;
+	inset: 0; /* равен родителю */
+	border-radius: inherit;
+	pointer-events: none;
+}
+
+/* видимый бордер с маской (показываем ТОЛЬКО рамку, не заливку) */
+.amb-glow::before {
+	padding: 2px; /* толщина рамки */
+	background: linear-gradient(
+		45deg,
+		#fbbf24,
+		#f59e0b,
+		#fde68a,
+		#f59e0b,
+		#fbbf24
+	);
+	background-size: 300% 300%;
+
+	/* маска «дырки» внутри, чтобы осталась только рамка */
+	-webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+	-webkit-mask-composite: xor;
+	mask-composite: exclude;
+}
+
+@keyframes amberPulse {
+	0%,
+	100% {
+		opacity: 0.35; /* слабее */
+		transform: scale(0.98); /* чуть меньше */
+		filter: blur(12px); /* мягко */
+	}
+	50% {
+		opacity: 0.9; /* ярче */
+		transform: scale(1.03); /* чуть больше */
+		filter: blur(20px); /* сильнее размыто */
+	}
+}
+
+/* мягкое золотистое свечение вокруг карточки + «дыхание» */
+.amb-glow::after {
+	inset: -10px;
+	background: radial-gradient(
+		40% 60% at 50% 50%,
+		rgba(253, 188, 25, 0.25),
+		transparent 70%
+	);
+	filter: blur(14px);
+	animation: amberPulse 2.8s ease-in-out infinite;
+	opacity: 0.6;
+	will-change: opacity, transform, filter; /* для плавности */
+}
+
+/* (опционально) усиливать свечение при наведении */
+.amb-glow:hover::after {
+	animation-duration: 1.8s; /* быстрее пульс */
+	opacity: 0.85;
+}
+
+/* (опционально) предпочитающие уменьшенное движение — без пульса */
+@media (prefers-reduced-motion: reduce) {
+	.amb-glow::after {
+		animation: none;
+	}
+}
+
+/* === Rose glowing border =================================== */
+.rose-glow {
+  position: relative;
+  border-radius: 0.375rem; /* rounded-md */
+  background: rgba(0,0,0,.35);
+}
+
+.rose-glow::before,
+.rose-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* градиентная бегущая рамка */
+.rose-glow::before {
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #fb7185, /* rose-400 */
+    #f43f5e, /* rose-500 */
+    #fda4af, /* rose-300 */
+    #f43f5e,
+    #fb7185
+  );
+  background-size: 300% 300%;
+  animation: roseFlow 16s linear infinite;
+
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+/* мягкое розовое свечение + «дыхание» */
+.rose-glow::after {
+  inset: -10px;
+  background: radial-gradient(40% 60% at 50% 50%, rgba(251,113,133,.25), transparent 70%);
+  filter: blur(14px);
+  animation: rosePulse 2.8s ease-in-out infinite;
+  opacity: .6;
+  will-change: opacity, transform, filter;
+}
+
+@keyframes roseFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes rosePulse {
+  0%,100% { opacity:.35; transform:scale(.98); filter:blur(12px); }
+  50%     { opacity:.9;  transform:scale(1.03); filter:blur(20px); }
+}
+
+.rose-glow:hover::after {
+  animation-duration: 1.8s;
+  opacity: .85;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rose-glow::after { animation: none; }
+}
+
+.emerald-glow {
+  position: relative;
+  border-radius: 0.375rem;
+  background: rgba(0,0,0,.35);
+}
+.emerald-glow::before,
+.emerald-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+/* бегущая рамка в изумрудных тонах */
+.emerald-glow::before {
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #34d399, /* emerald-400 */
+    #10b981, /* emerald-500 */
+    #a7f3d0, /* emerald-200 */
+    #10b981,
+    #34d399
+  );
+  background-size: 300% 300%;
+  animation: emeraldFlow 16s linear infinite;
+
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+/* мягкое зелёное свечение + лёгкий пульс */
+.emerald-glow::after {
+  inset: -10px;
+  background: radial-gradient(40% 60% at 50% 50%, rgba(16,185,129,.25), transparent 70%);
+  filter: blur(14px);
+  animation: emeraldPulse 2.8s ease-in-out infinite;
+  opacity: .6;
+  will-change: opacity, transform, filter;
+}
+@keyframes emeraldFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes emeraldPulse {
+  0%,100% { opacity:.35; transform:scale(.98); filter:blur(12px); }
+  50%     { opacity:.9;  transform:scale(1.03); filter:blur(20px); }
+}
+.emerald-glow:hover::after { animation-duration: 1.8s; opacity: .85; }
+@media (prefers-reduced-motion: reduce) {
+  .emerald-glow::after { animation: none; }
+}
+
+.soul-glow {
+  position: relative;
+  border-radius: 0.375rem; /* rounded-md */
+  background: rgba(0, 0, 0, 0.35);
+}
+
+.soul-glow::before,
+.soul-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* градиентная бегущая рамка в небесно-голубых оттенках */
+.soul-glow::before {
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #38bdf8, /* sky-400 */
+    #0ea5e9, /* sky-500 */
+    #22d3ee, /* cyan-400 */
+    #0ea5e9,
+    #38bdf8
+  );
+  background-size: 300% 300%;
+  animation: soulFlow 16s linear infinite;
+
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+
+/* мягкое небесное свечение + пульсация */
+.soul-glow::after {
+  inset: -10px;
+  background: radial-gradient(40% 60% at 50% 50%, rgba(56,189,248,.25), transparent 70%);
+  filter: blur(14px);
+  animation: soulPulse 2.8s ease-in-out infinite;
+  opacity: .6;
+  will-change: opacity, transform, filter;
+}
+
+@keyframes soulFlow {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+@keyframes soulPulse {
+  0%,100% { opacity:.35; transform:scale(.98); filter:blur(12px); }
+  50%     { opacity:.9;  transform:scale(1.03); filter:blur(20px); }
+}
+
+.soul-glow:hover::after {
+  animation-duration: 1.8s;
+  opacity: .85;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .soul-glow::after { animation: none; }
+}
+/* === Dream glowing border (фиолетовый бордер как у amber/rose) ======== */
+.dream-glow {
+  position: relative;
+  border-radius: 0.375rem;
+  background: rgba(0,0,0,.35);
+}
+.dream-glow::before,
+.dream-glow::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+}
+/* бегущий градиент бордера */
+.dream-glow::before {
+  padding: 2px;
+  background: linear-gradient(
+    45deg,
+    #a78bfa, /* violet-400 */
+    #8b5cf6, /* violet-500 */
+    #c4b5fd, /* violet-300 */
+    #8b5cf6,
+    #a78bfa
+  );
+  background-size: 300% 300%;
+  animation: dreamFlow 16s linear infinite;
+
+  -webkit-mask: linear-gradient(#000 0 0) content-box, linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+          mask-composite: exclude;
+}
+/* мягкое свечение + дыхание */
+.dream-glow::after {
+  inset: -10px;
+  background: radial-gradient(40% 60% at 50% 50%, rgba(167,139,250,.25), transparent 70%);
+  filter: blur(14px);
+  animation: dreamPulse 2.8s ease-in-out infinite;
+  opacity: .6;
+  will-change: opacity, transform, filter;
+}
+@keyframes dreamFlow {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes dreamPulse {
+  0%,100% { opacity:.35; transform:scale(.98); filter:blur(12px); }
+  50%     { opacity:.9;  transform:scale(1.03); filter:blur(20px); }
+}
+.dream-glow:hover::after { animation-duration: 1.8s; opacity: .85; }
+@media (prefers-reduced-motion: reduce) {
+  .dream-glow::after { animation: none; }
+}
+
+/* фиксированный фоновый декоративный рисунок (по желанию) */
