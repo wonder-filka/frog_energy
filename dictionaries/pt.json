@@ -127,6 +127,7 @@
     "noSelected": "Nenhuma célula selecionada no formulário.",
     "preferredNumber": "Número preferido",
     "numberTaken": "Este número já está ocupado, escolha outro, por favor",
+    "numberHeld": "Esta célula está reservada até {time} (aguardando pagamento). Escolha outro número ou tente novamente mais tarde.",
     "money": "Dinheiro",
     "love": "Amor",
     "quantityMoney": "Quantidade (dinheiro)",

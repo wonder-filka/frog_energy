@@ -43,6 +43,7 @@ export function proxy(request: NextRequest) {
  
 export const config = {
   matcher: [
-    '/((?!_next|.*\\..*).*)',
+    // Not /api: payment webhooks must reach the route handler, not a locale redirect
+    '/((?!_next|api/|.*\\..*).*)',
   ],
 }

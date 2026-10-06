@@ -166,7 +166,7 @@ export const RegistrationForm = ({ t, locale }: RegistrationFormProps) => {
           )}
         />
 
-        <Button disabled={pending} type="submit" className="w-full mt-12">
+        <Button disabled={pending} type="submit" className="w-full mt-12 text-black">
           {t.labels.register}
         </Button>
         <Button variant="outline" className="w-full" nativeButton={false} render={<Link href={`/${locale}/login`} />}>

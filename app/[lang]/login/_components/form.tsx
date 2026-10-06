@@ -98,7 +98,7 @@ export const LoginForm = ({ t, locale }: LoginFormProps) => {
                 <div className="flex justify-end">
                     <Link className="text-primary font-bold" href={`/${locale}/forgot`}>{t.labels.forgotPass}</Link>
                 </div>
-                <Button disabled={pending} type="submit" className="w-full mt-8">
+                <Button disabled={pending} type="submit" className="w-full text-black mt-8">
                     {t.labels.login}
                 </Button>
                 <Button variant="outline" className="w-full" nativeButton={false} render={<Link href={`/${locale}/registration`} />}>

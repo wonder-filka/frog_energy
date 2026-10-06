@@ -126,6 +126,7 @@
     "pickNumber": "Choose a preferred number",
     "preferredNumber": "Preferred number",
     "numberTaken": "This number is already taken, please choose another one",
+    "numberHeld": "This cell is reserved until {time} (awaiting payment). Choose another number or try again later.",
     "money": "Money",
     "love": "Love",
     "quantityMoney": "Quantity (money)",

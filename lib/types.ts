@@ -79,6 +79,7 @@ export type ConflictItem = {
 	variant?: Variant | "root";
 	personalNum?: number;
 	message: string;
+	heldUntil?: Date;
 };
 
 export type Assignment = {

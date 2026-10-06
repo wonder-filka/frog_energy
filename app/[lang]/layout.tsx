@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Inter } from "next/font/google";
+import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import { i18n } from "@/i18n-config";
@@ -11,8 +11,7 @@ import { SidebarInset, SidebarProvider } from "./components/ui/sidebar";
 import { AppSidebar } from "./components/app-sidebar";
 import { ProtectedHeader } from "./components/navigation-bar-protect";
 import { ScrollToTopButton } from "./components/scroll-to-top";
-
-const inter = Inter({ subsets: ['latin'], variable: '--font-sans' });
+import { Toaster } from "./components/ui/sonner";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -46,7 +45,7 @@ export default async function Root(props: LayoutProps<"/[lang]">) {
   return (
     <html
       lang={locale}
-      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans", inter.variable)}
+      className={cn("h-full", "antialiased", geistSans.variable, geistMono.variable, "font-sans")}
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col">
@@ -56,6 +55,7 @@ export default async function Root(props: LayoutProps<"/[lang]">) {
           enableSystem
           disableTransitionOnChange
         >
+          <Toaster />
           <SidebarProvider defaultOpen={false}>
             <AppSidebar className="hidden md:flex" data={userBasicSettings} userId={userId} />
             <SidebarInset>

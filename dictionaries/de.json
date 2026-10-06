@@ -127,6 +127,7 @@
     "noSelected": "Im Formular wurden keine Zellen ausgewählt.",
     "preferredNumber": "Bevorzugte Nummer",
     "numberTaken": "Diese Nummer ist belegt. Bitte wählen Sie eine andere.",
+    "numberHeld": "Diese Zelle ist bis {time} reserviert (Zahlung ausstehend). Wählen Sie eine andere Nummer oder versuchen Sie es später erneut.",
     "money": "Geld",
     "love": "Liebe",
     "quantityMoney": "Anzahl (Geld)",

@@ -126,6 +126,7 @@
     "pickNumber": "Choisir un numéro préféré",
     "preferredNumber": "Numéro préféré",
     "numberTaken": "Ce numéro est déjà pris, veuillez en choisir un autre",
+    "numberHeld": "Cette cellule est réservée jusqu'à {time} (paiement en attente). Choisissez un autre numéro ou réessayez plus tard.",
     "money": "Argent",
     "love": "Amour",
     "quantityMoney": "Quantité (argent)",

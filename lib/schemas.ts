@@ -41,3 +41,65 @@ export const NewPasswordSchema = z
 		error: "passwordMismatch",
 		path: ["confirm"],
 	});
+
+export const MAX_LEN = 160;
+export const MAX_DAYS = 365;
+export const PN_MAX = 10000;
+
+export const BuySlotVariantSchema = z.object({
+	isMoney: z.boolean().default(false),
+	isLove: z.boolean().default(false),
+	isLuck: z.boolean().default(false),
+	isSoul: z.boolean().default(false),
+	isDream: z.boolean().default(false),
+});
+
+export type BuySlotVariantFormInput = z.input<typeof BuySlotVariantSchema>;
+export type BuySlotVariantFormOutput = z.output<typeof BuySlotVariantSchema>;
+
+const BuySlotSectionSchema = z
+	.object({
+		days: z.coerce
+			.number()
+			.int()
+			.min(1, { error: "buyForm.errors.min" })
+			.max(MAX_DAYS, { error: "buyForm.errors.maxday" })
+			.default(1),
+		text: z.string().max(MAX_LEN).optional(),
+		pn: z.coerce
+			.number()
+			.int()
+			.min(1, { error: "buyForm.errors.min" })
+			.max(PN_MAX, { error: "buyForm.errors.max" })
+			.optional(),
+	})
+	.optional();
+
+export const BuySlotSchema = z.object({
+	tm: BuySlotSectionSchema,
+	tl: BuySlotSectionSchema,
+	tlk: BuySlotSectionSchema,
+	ts: BuySlotSectionSchema,
+	td: BuySlotSectionSchema,
+});
+
+export type BuySlotFormInput = z.input<typeof BuySlotSchema>;
+export type BuySlotFormOutput = z.output<typeof BuySlotSchema>;
+export type BuySlotFormKey = keyof BuySlotFormOutput;
+
+// Server-side check of what the client sends to createHolds: the price is
+// derived from `days`, so it must not be trusted from the browser
+export const SlotItemsSchema = z
+	.array(
+		z.object({
+			variant: z.enum(["money", "love", "luck", "soul", "dream"]),
+			days: z.number().int().min(1).max(MAX_DAYS),
+			text: z.string().max(MAX_LEN).optional(),
+			personalNum: z.number().int().min(1).max(PN_MAX).optional(),
+		})
+	)
+	.min(1)
+	.max(5)
+	.refine((items) => new Set(items.map((i) => i.variant)).size === items.length, {
+		error: "duplicateVariant",
+	});
