@@ -2,7 +2,7 @@
 
 import { LogOut } from "lucide-react"
 import { useTransition } from "react"
-import { deleteSession } from "@/lib/session"
+import { logout } from "../_actions"
 import { SidebarMenuButton } from "./ui/sidebar"
 import { DropdownMenuItem } from "./ui/dropdown-menu"
 
@@ -17,7 +17,7 @@ export const SidebarLogoutButton = ({ label, redirectTo }: LogoutProps) => {
   return (
     <SidebarMenuButton
       disabled={pending}
-      onClick={() => startTransition(() => deleteSession(redirectTo))}
+      onClick={() => startTransition(() => logout(redirectTo))}
     >
       <LogOut />
       <span>{label}</span>
@@ -31,7 +31,7 @@ export const DropdownLogoutItem = ({ label, redirectTo }: LogoutProps) => {
   return (
     <DropdownMenuItem
       disabled={pending}
-      onClick={() => startTransition(() => deleteSession(redirectTo))}
+      onClick={() => startTransition(() => logout(redirectTo))}
     >
       {label}
     </DropdownMenuItem>

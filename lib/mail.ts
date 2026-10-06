@@ -1,4 +1,5 @@
-// lib/mail.ts
+import "server-only";
+
 import nodemailer, { type Transporter } from "nodemailer";
 import type { Locale } from "@/i18n-config";
 import type { SlotKind } from "@/app/generated/prisma/client";

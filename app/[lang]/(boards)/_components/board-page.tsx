@@ -3,10 +3,9 @@ import { getDictionary, getLocale } from '@/get-dictionary'
 import { boardDict } from '@/lib/board-dict'
 import { getSessionUserId } from '@/lib/session'
 import type { Variant } from '@/lib/types'
-import { getBoardAssignments } from '../_actions'
+import { getBoardAssignments } from '../_data'
 import { DashboardComponents } from './dashboard-component'
 
-// Shared by /money, /love, /luck, /soul and /dream
 export const BoardPage = async ({ variant }: { variant: Variant }) => {
   const [t, locale, userId, assignments] = await Promise.all([
     getDictionary(),

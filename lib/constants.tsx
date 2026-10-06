@@ -3,7 +3,6 @@ import type { JSX } from "react"
 import type { Dictionary } from "@/get-dictionary"
 import type { Variant } from "./types"
 
-// `label` picks the translation from the dictionary; `url` is relative to the locale prefix
 export const sidebarItems = [
   {
     key: "money",

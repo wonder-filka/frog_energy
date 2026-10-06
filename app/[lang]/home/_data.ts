@@ -1,7 +1,5 @@
 import "server-only";
 
-// Data for the /home page (called from its Server Component only)
-
 import prisma from "@/lib/prisma";
 import { PopularCell, Variant } from "@/lib/types";
 import { slotDelegate } from "@/lib/variant-models";
@@ -15,7 +13,6 @@ export async function getTopLikedActiveSlots(
 		const now = new Date();
 		const where = { deletedAt: null, expiresAt: { gte: now } };
 
-		// Базовый select + счётчик лайков
 		const baseSelect = {
 			id: true,
 			userId: true,
@@ -144,5 +141,24 @@ export async function getLatestInfo() {
 	} catch (error) {
 		console.error("[getLatestInfo]", error);
 		return null;
+	}
+}
+
+export async function getUserNameAndEnergy(userId: string) {
+	try {
+		const result = await prisma.user.findUnique({
+			where: { id: userId },
+			select: {
+				firstName: true,
+				energy: true,
+			},
+		});
+		if (!result) {
+			return;
+		}
+		return result;
+	} catch (error) {
+		console.error("Error fetching user settings:", error);
+		return;
 	}
 }

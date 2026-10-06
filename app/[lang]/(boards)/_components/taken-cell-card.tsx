@@ -9,10 +9,10 @@ import { HeartIcon } from "lucide-react"
 import { useState, useTransition } from "react"
 import {
 	Dialog, DialogContent, DialogHeader, DialogTitle, DialogDescription, DialogFooter
-} from '../components/ui/dialog'
-import { Button } from "../components/ui/button"
+} from '../../components/ui/dialog'
+import { Button } from "../../components/ui/button"
 import { useRouter } from "next/navigation"
-import { toggleMoneyLike } from "../_actions"
+import { toggleLike } from "../../_actions"
 
 interface TakenCellCardProps {
 	n: number
@@ -38,7 +38,6 @@ export const TakenCellCard = ({
 	const router = useRouter()
 	const [isPending, startTransition] = useTransition()
 	const [showAuthModal, setShowAuthModal] = useState(false)
-	// Updated from the action result so the heart and count change right away
 	const [like, setLike] = useState({ likedByMe: a.likedByMe, likes: a.likes })
 
 	const handleToggleLike = (slotId: string) => {
@@ -47,7 +46,7 @@ export const TakenCellCard = ({
 			return
 		}
 		startTransition(async () => {
-			const res = await toggleMoneyLike(slotId, variant)
+			const res = await toggleLike(slotId, variant)
 			if (!res.ok) {
 				setShowAuthModal(true)
 

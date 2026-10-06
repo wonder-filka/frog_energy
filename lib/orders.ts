@@ -51,13 +51,6 @@ async function buySlots(userId: string, holds: SlotHold[], tx: PrismaTx) {
 	}
 	return created;
 }
-
-/**
- * Turns a paid order's holds into cells, exactly once. The webhook and the
- * manual reconcile can arrive at the same time, so the PAID flip is a
- * conditional update inside the same transaction as the cell creation.
- * Returns true when this call completed the order.
- */
 export async function completePaidOrder(orderId: string, locale: Locale) {
 	const order = await prisma.$transaction(async (tx) => {
 		const flipped = await tx.order.updateMany({
@@ -122,7 +115,6 @@ async function createHold(
 	});
 }
 
-// Bought cell -> "taken"; unpaid hold of any user -> "held" until it expires
 async function checkPreferredNumbers(
 	variant: Variant,
 	personalNum: number,
@@ -203,7 +195,6 @@ export type CreateHoldsResult =
 			conflicts?: HoldConflict[];
 	  };
 
-/** Books (holds for HOLD_MINUTES) the requested cells for userId. */
 export async function createHoldsForUser(
 	slots: SlotItem[],
 	userId: string
@@ -264,16 +255,5 @@ export async function createHoldsForUser(
 	} catch (error) {
 		console.error("createHolds error", error);
 		return { message: "unknownError" };
-	}
-}
-
-export async function getSlotById(slotId: string, variant: Variant) {
-	try {
-		return await slotDelegate(prisma, variant).findUnique({
-			where: { id: slotId },
-		});
-	} catch (error) {
-		console.error("Error fetching slot by ID:", error);
-		return null;
 	}
 }

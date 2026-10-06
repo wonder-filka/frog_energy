@@ -1,11 +1,9 @@
-"use server";
+import "server-only";
 
 import { JWTPayload, SignJWT, jwtVerify } from "jose";
 
 import { cookies } from "next/headers";
-import { redirect } from "next/navigation";
 
-// Read on each call so an updated .env is picked up without restarting the dev server
 function getEncodedKey() {
 	const secretKey = process.env.SESSION_SECRET;
 	if (!secretKey) {
@@ -67,11 +65,9 @@ export async function updateSession() {
 	});
 }
 
-// Server Actions can't read root params, so the caller passes a locale-prefixed path
-export async function deleteSession(redirectTo: string) {
+export async function deleteSession() {
 	const cookieStore = await cookies();
 	cookieStore.delete("session");
-	redirect(redirectTo);
 }
 
 export async function getSessionUserId(): Promise<string | null> {

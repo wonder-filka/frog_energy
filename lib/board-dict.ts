@@ -1,7 +1,6 @@
 import type { Dictionary } from "@/get-dictionary";
 import type { Variant } from "./types";
 
-// The slice of the dictionary the board (a Client Component) needs
 export const boardDict = (t: Dictionary, variant: Variant) => ({
 	title: t.sidebar[`${variant}Title`],
 	description: t.dashboard.description,

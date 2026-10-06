@@ -2,9 +2,8 @@ import type { Metadata } from "next";
 import { getDictionary, getLocale } from "@/get-dictionary";
 import { homeDict } from "@/lib/home-dict";
 import { getSessionUserId } from "@/lib/session";
-import { getUserNameAndEnergy } from "@/lib/user";
 import type { Variant } from "@/lib/types";
-import { getLatestInfo, getTopLikedActiveSlots, getUserCellsSeparated } from "./_data";
+import { getLatestInfo, getTopLikedActiveSlots, getUserCellsSeparated, getUserNameAndEnergy } from "./_data";
 
 import { HeaderHomeComponent } from "./_components/header-home";
 import { SlotsComponent } from "./_components/slots-component";

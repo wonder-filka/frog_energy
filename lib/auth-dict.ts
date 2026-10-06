@@ -1,7 +1,5 @@
 import type { Dictionary } from "@/get-dictionary";
 
-// The slice of the dictionary that auth forms (Client Components) need,
-// so pages pass only these strings instead of the whole dictionary
 export const authDict = (t: Dictionary) => ({
 	labels: {
 		email: t.email,
@@ -21,7 +19,6 @@ export const authDict = (t: Dictionary) => ({
 		hide: t.hide,
 		show: t.show,
 	},
-	// Keyed by the message keys used in lib/schemas.ts and the auth actions
 	messages: {
 		minFirstName: t.minFirstName,
 		invalidEmail: t.invalidEmail,

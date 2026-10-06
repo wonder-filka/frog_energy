@@ -2,7 +2,7 @@ import type { Metadata } from 'next';
 import { getDictionary, getLocale } from '@/get-dictionary';
 import { authDict } from '@/lib/auth-dict';
 import { buyDict } from '@/lib/buy-dict';
-import { getSlotById } from '@/lib/orders';
+import { getSlotById } from './_data';
 import { PN_MAX } from '@/lib/schemas';
 import { getSessionUserId } from '@/lib/session';
 import type { SlotItem, Variant } from '@/lib/types';

@@ -12,7 +12,7 @@ import {
 } from '../../components/ui/dialog'
 import { Button } from "../../components/ui/button"
 import { useState, useTransition } from "react"
-import { toggleMoneyLike } from "../../_actions"
+import { toggleLike } from "../../_actions"
 
 
 export interface PopularCellsProps {
@@ -35,7 +35,7 @@ export const PopularCellComponent = ({ cell, userId, t, locale }: PopularCellsPr
 			return
 		}
 		startTransition(async () => {
-			const res = await toggleMoneyLike(id, variant)
+			const res = await toggleLike(id, variant)
 			if (!res.ok) {
 				setShowAuthModal(true)
 				return
