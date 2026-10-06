@@ -1,10 +1,11 @@
 'use client'
 
-import { useTransition } from "react";
+import { useState, useTransition } from "react";
 import { Controller, SubmitHandler, useForm } from "react-hook-form";
 import { z } from "zod";
 import { zodResolver } from "@hookform/resolvers/zod";
 import Link from "next/link";
+import { Eye, EyeOff } from "lucide-react";
 import { LoginSchema } from "@/lib/schemas";
 import { translateMessage, type AuthDict } from "@/lib/auth-dict";
 import type { Locale } from "@/i18n-config";
@@ -21,6 +22,7 @@ interface LoginFormProps {
 
 export const LoginForm = ({ t, locale }: LoginFormProps) => {
     const [pending, startTransition] = useTransition();
+    const [showPassword, setShowPassword] = useState(false);
 
     const form = useForm<z.infer<typeof LoginSchema>>({
         resolver: zodResolver(LoginSchema),
@@ -68,7 +70,27 @@ export const LoginForm = ({ t, locale }: LoginFormProps) => {
                     render={({ field, fieldState }) => (
                         <Field data-invalid={fieldState.invalid}>
                             <FieldLabel htmlFor="login-password">{t.labels.password}</FieldLabel>
-                            <Input id="login-password" disabled={pending} type="password" placeholder={t.labels.password} aria-invalid={fieldState.invalid} {...field} />
+                            <div className="relative">
+                                <Input
+                                    id="login-password"
+                                    disabled={pending}
+                                    type={showPassword ? "text" : "password"}
+                                    placeholder={t.labels.password}
+                                    autoComplete="current-password"
+                                    aria-invalid={fieldState.invalid}
+                                    {...field}
+                                />
+                                <Button
+                                    type="button"
+                                    variant="ghost"
+                                    size="icon"
+                                    onClick={() => setShowPassword((v) => !v)}
+                                    className="absolute right-1 top-1/2 -translate-y-1/2"
+                                    aria-label={showPassword ? t.labels.hide : t.labels.show}
+                                >
+                                    {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                                </Button>
+                            </div>
                             <FieldError>{translateMessage(t.messages, fieldState.error?.message)}</FieldError>
                         </Field>
                     )}
