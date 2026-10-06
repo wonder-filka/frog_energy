@@ -52,7 +52,7 @@ export default async function Root(props: LayoutProps<"/[lang]">) {
       <body className="min-h-full flex flex-col">
         <ThemeProvider
           attribute="class"
-          defaultTheme="system"
+          defaultTheme="dark"
           enableSystem
           disableTransitionOnChange
         >
