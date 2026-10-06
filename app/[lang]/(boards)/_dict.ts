@@ -1,5 +1,5 @@
 import type { Dictionary } from "@/get-dictionary";
-import type { Variant } from "./types";
+import type { Variant } from "@/lib/types";
 
 export const boardDict = (t: Dictionary, variant: Variant) => ({
 	title: t.sidebar[`${variant}Title`],

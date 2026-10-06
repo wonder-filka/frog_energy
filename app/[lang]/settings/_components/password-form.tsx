@@ -11,7 +11,7 @@ import { Button } from "../../components/ui/button"
 import { Field, FieldError, FieldGroup, FieldLabel } from "../../components/ui/field"
 import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card"
 import { ChangePasswordSchema } from "@/lib/schemas"
-import { translateSettingsMessage, type SettingsDict } from "@/lib/settings-dict"
+import { translateSettingsMessage, type SettingsDict } from "../_dict"
 import { changeUserPassword } from "../_actions"
 
 type PasswordFormValues = z.infer<typeof ChangePasswordSchema>

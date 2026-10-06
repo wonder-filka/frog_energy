@@ -8,7 +8,7 @@ import { useRouter } from "next/navigation";
 import { Check, Eye, EyeOff, LoaderCircle } from "lucide-react";
 import { LoginSchema, RegistrationSchema } from "@/lib/schemas";
 import { translateMessage, type AuthDict } from "@/lib/auth-dict";
-import type { BuyDict } from "@/lib/buy-dict";
+import type { BuyDict } from "../_dict";
 import { cn } from "@/lib/utils";
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "../../components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "../../components/ui/tabs";

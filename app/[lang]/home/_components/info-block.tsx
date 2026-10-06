@@ -5,7 +5,7 @@ import { Button } from '../../components/ui/button'
 import { ContactTelegramClient } from '../../contact/_components/contact-client'
 import { ContactCard } from '../../contact/_components/contact-card'
 import { CONTACTS } from '@/lib/constants'
-import type { HomeDict } from '@/lib/home-dict'
+import type { HomeDict } from '../_dict'
 import type { Locale } from '@/i18n-config'
 
 export interface InfoComponentProps {

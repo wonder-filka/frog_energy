@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { getDictionary, getLocale } from '@/get-dictionary'
-import { boardDict } from '@/lib/board-dict'
+import { boardDict } from '../_dict'
 import { getSessionUserId } from '@/lib/session'
 import type { Variant } from '@/lib/types'
 import { getBoardAssignments } from '../_data'

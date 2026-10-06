@@ -1,7 +1,7 @@
 'use client'
 
 import { PopularCell } from "@/lib/types"
-import type { HomeDict } from "@/lib/home-dict"
+import type { HomeDict } from "../_dict"
 import type { Locale } from "@/i18n-config"
 import { PopularCellComponent } from "./popular-cell"
 import {

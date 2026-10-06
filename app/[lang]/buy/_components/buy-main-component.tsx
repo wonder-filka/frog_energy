@@ -7,7 +7,7 @@ import { useRouter } from "next/navigation";
 import { AlertCircleIcon, LoaderCircle } from "lucide-react";
 import { ConflictItem, SlotItem } from "@/lib/types";
 import { cn } from "@/lib/utils";
-import { translateBuyMessage, type BuyDict } from "@/lib/buy-dict";
+import { translateBuyMessage, type BuyDict } from "../_dict";
 import type { AuthDict } from "@/lib/auth-dict";
 import type { Locale } from "@/i18n-config";
 import { Button } from "../../components/ui/button";

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import { getDictionary, getLocale } from "@/get-dictionary";
-import { homeDict } from "@/lib/home-dict";
+import { homeDict } from "./_dict";
 import { getSessionUserId } from "@/lib/session";
 import type { Variant } from "@/lib/types";
 import { getLatestInfo, getTopLikedActiveSlots, getUserCellsSeparated, getUserNameAndEnergy } from "./_data";

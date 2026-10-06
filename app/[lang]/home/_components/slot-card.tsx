@@ -9,7 +9,7 @@ import { Button } from '../../components/ui/button'
 import { cn } from '@/lib/utils'
 import { AnySlot, Variant } from '@/lib/types'
 import { VARIANT_STYLES } from '@/lib/constants'
-import type { HomeDict } from '@/lib/home-dict'
+import type { HomeDict } from '../_dict'
 import type { Locale } from '@/i18n-config'
 import { useHydrated } from '@/hooks/use-hydrated'
 

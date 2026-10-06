@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { getDictionary, getLocale } from "@/get-dictionary";
 import { authDict } from "@/lib/auth-dict";
-import { settingsDict } from "@/lib/settings-dict";
+import { settingsDict } from "./_dict";
 import { getSessionUserId } from "@/lib/session";
 import { getUserBasicSettings } from "@/lib/user";
 import { RegistrationForm } from "../registration/_components/registration-form";

@@ -4,7 +4,7 @@ import { useMemo, useState } from "react";
 import Link from "next/link";
 import { SlotCard } from "./slot-card";
 import { AnySlot, Variant } from "@/lib/types";
-import type { HomeDict } from "@/lib/home-dict";
+import type { HomeDict } from "../_dict";
 import type { Locale } from "@/i18n-config";
 import { Button } from "../../components/ui/button";
 

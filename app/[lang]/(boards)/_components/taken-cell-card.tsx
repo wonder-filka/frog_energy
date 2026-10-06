@@ -2,7 +2,7 @@
 
 import { Assignment, Variant } from "@/lib/types"
 import { VariantStyle } from "@/lib/constants"
-import type { BoardDict } from "@/lib/board-dict"
+import type { BoardDict } from "../_dict"
 import type { Locale } from "@/i18n-config"
 import { cn } from "@/lib/utils"
 import { HeartIcon } from "lucide-react"

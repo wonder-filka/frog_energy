@@ -1,7 +1,7 @@
 import Link from "next/link"
 import { Zap } from "lucide-react"
 import { Button } from "../../components/ui/button"
-import type { HomeDict } from "@/lib/home-dict"
+import type { HomeDict } from "../_dict"
 import type { Locale } from "@/i18n-config"
 
 export interface HeaderHomeProps {

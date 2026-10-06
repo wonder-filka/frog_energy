@@ -3,7 +3,7 @@
 import { PopularCell, Variant } from "@/lib/types"
 import { VARIANT_STYLES } from "@/lib/constants"
 import { cn } from "@/lib/utils"
-import type { HomeDict } from "@/lib/home-dict"
+import type { HomeDict } from "../_dict"
 import type { Locale } from "@/i18n-config"
 import { HeartIcon } from "lucide-react"
 import { useRouter } from "next/navigation"

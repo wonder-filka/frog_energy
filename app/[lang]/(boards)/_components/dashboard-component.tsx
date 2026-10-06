@@ -9,7 +9,7 @@ import { Button } from '../../components/ui/button'
 import { cn } from '@/lib/utils'
 import { VARIANT_STYLES } from '@/lib/constants'
 import type { Assignment, Variant } from '@/lib/types'
-import type { BoardDict } from '@/lib/board-dict'
+import type { BoardDict } from '../_dict'
 import type { Locale } from '@/i18n-config'
 
 import { Pagination } from './pagination-dashboard'

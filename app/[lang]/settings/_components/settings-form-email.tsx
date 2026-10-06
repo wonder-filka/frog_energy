@@ -12,7 +12,7 @@ import { Button } from "../../components/ui/button"
 import { Field, FieldError, FieldGroup, FieldLabel } from "../../components/ui/field"
 import { Card, CardContent, CardHeader, CardTitle } from "../../components/ui/card"
 import { SettingsEmailSchema } from "@/lib/schemas"
-import { translateSettingsMessage, type SettingsDict } from "@/lib/settings-dict"
+import { translateSettingsMessage, type SettingsDict } from "../_dict"
 import { updateUserEmail } from "../_actions"
 
 type BasicSettingsFormValues = z.infer<typeof SettingsEmailSchema>

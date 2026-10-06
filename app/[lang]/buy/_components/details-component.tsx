@@ -14,7 +14,7 @@ import { Field, FieldDescription, FieldError, FieldLabel } from '../../component
 import type { ConflictItem, SlotItem, Variant } from '@/lib/types'
 import type { Locale } from '@/i18n-config'
 import { cn } from '@/lib/utils'
-import { translateBuyMessage, type BuyDict } from '@/lib/buy-dict'
+import { translateBuyMessage, type BuyDict } from '../_dict'
 import { BuySlotFormInput, BuySlotFormKey, BuySlotFormOutput, BuySlotSchema, MAX_LEN } from '@/lib/schemas'
 import { VARIANT_COLORS, VARIANTS } from './variant-colors'
 
