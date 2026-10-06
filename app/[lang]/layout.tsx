@@ -5,7 +5,7 @@ import { cn } from "@/lib/utils";
 import { i18n } from "@/i18n-config";
 import { getLocale } from "@/get-dictionary";
 import { getSessionUserId } from "@/lib/session";
-import { getUserBasicSettings } from "./settings/_actions";
+import { getUserBasicSettings } from "@/lib/user";
 import { ThemeProvider } from "./components/theme-provider";
 import { SidebarInset, SidebarProvider } from "./components/ui/sidebar";
 import { AppSidebar } from "./components/app-sidebar";

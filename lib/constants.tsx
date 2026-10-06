@@ -1,4 +1,5 @@
 import { Settings, Heart, Clover, MoonStar, Sparkles, Coins, HomeIcon } from "lucide-react"
+import type { JSX } from "react"
 import type { Dictionary } from "@/get-dictionary"
 import type { Variant } from "./types"
 
@@ -56,6 +57,9 @@ export const sidebarItems = [
 ]
 
 export type VariantStyle = {
+  icon: JSX.Element
+  badgeCls: string
+  gradient: string
   glowCls?: string
   buttonTitle?: string
   focusV?: string
@@ -69,6 +73,9 @@ export type VariantStyle = {
 
 export const VARIANT_STYLES: Record<Variant, VariantStyle> = {
   money: {
+    icon: <Coins className="h-4 w-4 text-amber-400" />,
+    badgeCls: 'bg-amber-400/15 text-amber-400',
+    gradient: 'bg-gradient-to-r from-amber-400 to-amber-500',
     glowCls: 'amb-glow',
     buttonTitle: 'bg-amber-400 hover:bg-amber-500 text-black',
     focusV: 'focus-visible:ring-amber-400',
@@ -80,6 +87,9 @@ export const VARIANT_STYLES: Record<Variant, VariantStyle> = {
     items: 'bg-amber-500 hover:bg-amber-500',
   },
   love: {
+    icon: <Heart className="h-4 w-4 text-rose-400" />,
+    badgeCls: 'bg-rose-400/15 text-rose-400',
+    gradient: 'bg-gradient-to-r from-rose-400 to-rose-500',
     glowCls: 'rose-glow',
     buttonTitle: 'bg-rose-400 hover:bg-rose-500  text-black',
     focusV: 'focus-visible:ring-rose-400',
@@ -91,6 +101,9 @@ export const VARIANT_STYLES: Record<Variant, VariantStyle> = {
     items: 'bg-rose-500 hover:bg-rose-500',
   },
   luck: {
+    icon: <Clover className="h-4 w-4 text-emerald-400" />,
+    badgeCls: 'bg-emerald-400/15 text-emerald-400',
+    gradient: 'bg-gradient-to-r from-emerald-400 to-emerald-500',
     glowCls: 'emerald-glow',
     buttonTitle: 'bg-emerald-400 hover:bg-emerald-500  text-black',
     focusV: 'focus-visible:ring-emerald-400',
@@ -102,6 +115,9 @@ export const VARIANT_STYLES: Record<Variant, VariantStyle> = {
     items: 'bg-emerald-500 hover:bg-emerald-500',
   },
   soul: {
+    icon: <Sparkles className="h-4 w-4 text-sky-400" />,
+    badgeCls: 'bg-sky-400/15 text-sky-400',
+    gradient: 'bg-gradient-to-r from-sky-400 to-sky-500',
     glowCls: 'soul-glow',
     buttonTitle: 'bg-sky-400 hover:bg-sky-500 text-black',
     focusV: 'focus-visible:ring-sky-400',
@@ -113,6 +129,9 @@ export const VARIANT_STYLES: Record<Variant, VariantStyle> = {
     items: 'bg-sky-500 hover:bg-sky-500',
   },
   dream: {
+    icon: <MoonStar className="h-4 w-4 text-violet-400" />,
+    badgeCls: 'bg-violet-400/15 text-violet-400',
+    gradient: 'bg-gradient-to-r from-violet-400 to-fuchsia-500',
     glowCls: 'dream-glow',
     buttonTitle: 'bg-violet-400 hover:bg-violet-500 text-black',
     focusV: 'focus-visible:ring-violet-400',
@@ -124,3 +143,10 @@ export const VARIANT_STYLES: Record<Variant, VariantStyle> = {
     items: 'bg-violet-500 hover:bg-violet-500',
   },
 }
+
+export const CONTACTS = {
+	email: 'support@frog-energy.com',
+	telegram: 'frog_energy_admin', // t.me/<username>
+	tiktok: 'frog.energyy',   // tiktok.com/@<handle>
+	instagram: 'frog.energyy' // instagram.com/<handle>
+};
