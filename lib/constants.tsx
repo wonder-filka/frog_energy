@@ -149,3 +149,5 @@ export const CONTACTS = {
 	tiktok: 'frog.energyy',   // tiktok.com/@<handle>
 	instagram: 'frog.energyy' // instagram.com/<handle>
 };
+
+export const SITE_URL = "https://frog-energy.com"

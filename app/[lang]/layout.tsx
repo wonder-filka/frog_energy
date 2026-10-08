@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
+import { SITE_URL } from "@/lib/constants";
 import { i18n } from "@/i18n-config";
 import { getLocale } from "@/get-dictionary";
 import { getSessionUserId } from "@/lib/session";
@@ -24,7 +25,9 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
   title: "Frog Energy",
+  appleWebApp: { title: "Frog Energy" },
   description: "It’s an online board whose cells are charged to fulfill specific intentions.",
 };
 
