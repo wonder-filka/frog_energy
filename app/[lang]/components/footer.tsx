@@ -52,7 +52,7 @@ export const Footer = async () => {
         {/* Logo and Brand */}
         <div className="col-span-full xl:col-span-2 flex items-start">
           <Image
-            src="/11111.png"
+            src="/footer.png"
             alt="Frog Energy logo"
             width={36}
             height={24}
