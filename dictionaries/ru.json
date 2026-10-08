@@ -617,5 +617,22 @@
     "contact": "Вопросы по cookie: support@frog-energy.com"
   },
   "manualError": "Ошибка",
-  "signupFailed": "Такого юзера не существует"
+  "signupFailed": "Такого юзера не существует",
+  "cookieConsent": {
+    "title": "Мы используем cookie",
+    "text": "Необходимые cookie нужны для работы сайта. С вашего согласия мы также используем аналитические (Google) и маркетинговые cookie (Meta Pixel, Google Ads).",
+    "policy": "Политика cookie",
+    "accept": "Принять все",
+    "decline": "Отклонить",
+    "customize": "Настроить",
+    "save": "Сохранить выбор",
+    "close": "Закрыть",
+    "necessaryTitle": "Строго необходимые",
+    "necessaryDesc": "Вход, сессия, язык. Всегда включены.",
+    "analyticsTitle": "Аналитические",
+    "analyticsDesc": "Google Tag Manager и Google Analytics: обезличенная статистика посещений.",
+    "marketingTitle": "Маркетинговые",
+    "marketingDesc": "Meta Pixel и Google Ads: оценка и персонализация рекламы.",
+    "footerLink": "Настройки cookie"
+  }
 }

@@ -617,5 +617,22 @@
     },
     "updates": "We may update this Policy. The current version is always available on the website.",
     "contact": "Cookie questions: support@frog-energy.com"
+  },
+  "cookieConsent": {
+    "title": "We use cookies",
+    "text": "Essential cookies keep the site working. With your consent we also use analytics (Google) and marketing cookies (Meta Pixel, Google Ads).",
+    "policy": "Cookie policy",
+    "accept": "Accept all",
+    "decline": "Decline",
+    "customize": "Customize",
+    "save": "Save choice",
+    "close": "Close",
+    "necessaryTitle": "Strictly necessary",
+    "necessaryDesc": "Sign-in, session, language. Always on.",
+    "analyticsTitle": "Analytics",
+    "analyticsDesc": "Google Tag Manager and Google Analytics: anonymous visit statistics.",
+    "marketingTitle": "Marketing",
+    "marketingDesc": "Meta Pixel and Google Ads: ad measurement and personalisation.",
+    "footerLink": "Cookie settings"
   }
 }

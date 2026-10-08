@@ -617,5 +617,22 @@
     "contact": "Fragen zu Cookies: support@frog-energy.com"
   },
   "manualError": "Fehler",
-  "signupFailed": "Dieser Benutzer existiert nicht"
+  "signupFailed": "Dieser Benutzer existiert nicht",
+  "cookieConsent": {
+    "title": "Wir verwenden Cookies",
+    "text": "Notwendige Cookies halten die Website am Laufen. Mit Ihrer Einwilligung verwenden wir außerdem Analyse- (Google) und Marketing-Cookies (Meta Pixel, Google Ads).",
+    "policy": "Cookie-Richtlinie",
+    "accept": "Alle akzeptieren",
+    "decline": "Ablehnen",
+    "customize": "Anpassen",
+    "save": "Auswahl speichern",
+    "close": "Schließen",
+    "necessaryTitle": "Unbedingt erforderlich",
+    "necessaryDesc": "Anmeldung, Sitzung, Sprache. Immer aktiv.",
+    "analyticsTitle": "Analyse",
+    "analyticsDesc": "Google Tag Manager und Google Analytics: anonyme Besuchsstatistik.",
+    "marketingTitle": "Marketing",
+    "marketingDesc": "Meta Pixel und Google Ads: Messung und Personalisierung von Werbung.",
+    "footerLink": "Cookie-Einstellungen"
+  }
 }

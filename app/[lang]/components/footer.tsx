@@ -2,6 +2,7 @@ import { Separator } from "./ui/separator";
 import { getDictionary, getLocale, type Dictionary } from "@/get-dictionary";
 import Image from "next/image";
 import Link from "next/link";
+import { CookieSettingsButton } from "./cookie-consent";
 
 type FooterLinks = Dictionary["footer"]["links"];
 
@@ -86,6 +87,11 @@ export const Footer = async () => {
                   </Link>
                 </li>
               ))}
+              {section.title === t.footer.sections.legal.title && (
+                <li>
+                  <CookieSettingsButton label={t.cookieConsent.footerLink} />
+                </li>
+              )}
             </ul>
           </nav>
         ))}
