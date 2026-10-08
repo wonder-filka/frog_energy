@@ -39,6 +39,10 @@ export function proxy(request: NextRequest) {
       ),
     );
   }
+
+  const headers = new Headers(request.headers);
+  headers.set("x-lang", pathname.split("/")[1]);
+  return NextResponse.next({ request: { headers } });
 }
  
 export const config = {
