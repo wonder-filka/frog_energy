@@ -1,7 +1,5 @@
 import { z } from "zod";
 
-// Error messages are keys of `formMessages` in lib/auth-dict.ts, translated when rendered
-
 export const RegistrationSchema = z
 	.object({
 		firstName: z.string().min(2, { error: "minFirstName" }),
@@ -87,8 +85,6 @@ export type BuySlotFormInput = z.input<typeof BuySlotSchema>;
 export type BuySlotFormOutput = z.output<typeof BuySlotSchema>;
 export type BuySlotFormKey = keyof BuySlotFormOutput;
 
-// Server-side check of what the client sends to createHolds: the price is
-// derived from `days`, so it must not be trusted from the browser
 export const SlotItemsSchema = z
 	.array(
 		z.object({
@@ -104,7 +100,6 @@ export const SlotItemsSchema = z
 		error: "duplicateVariant",
 	});
 
-// Settings page: the same schemas validate the forms and the Server Actions
 export const SettingsNameSchema = z.object({
 	firstName: z.string().min(2, { error: "minFirstName" }),
 });
@@ -113,8 +108,20 @@ export const SettingsEmailSchema = z.object({
 	email: z.email({ error: "invalidEmail" }),
 });
 
-// New password follows the reset-password rules (temp allowed 6+ here)
+
 export const ChangePasswordSchema = z.object({
 	currentPassword: z.string().min(1, { error: "shortPassword" }),
 	newPassword: z.string().min(8, { error: "shortPassword" }).max(128, { error: "longPassword" }),
+});
+
+export const AdminDeleteSchema = z.object({
+	itemId: z.string().min(1),
+	variant: z.enum(["money", "love", "luck", "soul", "dream"]),
+	reason: z.string().trim().min(5, { error: "Reason must be at least 5 characters long." }).max(500),
+});
+
+export const AdminInfoSchema = z.object({
+	nextBroadcast: z.string().trim().max(500),
+	prevBroadcast: z.string().trim().max(500),
+	weekTopic: z.string().trim().max(2000),
 });

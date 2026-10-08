@@ -257,3 +257,35 @@ export async function createHoldsForUser(
 		return { message: "unknownError" };
 	}
 }
+
+export async function grantSlot(
+	slot: SlotItem,
+	userId: string
+): Promise<BuyResult | { message: string }> {
+	try {
+		return await prisma.$transaction(async (tx) => {
+			let num: number;
+			if (slot.personalNum != null) {
+				if (await checkPreferredNumbers(slot.variant, slot.personalNum, tx)) {
+					return { message: "Занято" };
+				}
+				num = slot.personalNum;
+			} else {
+				const firstEnabled = await findFirstEnabled(slot.variant, tx);
+				if (typeof firstEnabled !== "number") {
+					return { message: firstEnabled.message };
+				}
+				num = firstEnabled;
+			}
+
+			const hold = await createHold(userId, slot, num, slot.days, slot.text ?? "", tx);
+			const bought = await buySlot({ userId, order: hold, tx });
+			// temp left this hold "active" for 10 more minutes; it is used now
+			await tx.slotHold.update({ where: { id: hold.id }, data: { status: "consumed" } });
+			return bought;
+		});
+	} catch (error) {
+		console.error("grantSlot error", error);
+		return { message: "unknownError" };
+	}
+}
